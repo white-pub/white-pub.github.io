@@ -7,7 +7,7 @@
 		@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
 
 			
-		article,div {
+		article,div { /*其實div不必標出，因為article是div的parent，只要不特別設定，div會自動繼承article的特性 */
 			background-color: purple;
 		}
 
@@ -15,7 +15,7 @@
 				background-color: pink;
 		}
 
-		article,p{
+		article,p{/*p不必標出。article是p的parent，只要不特別設定，p會自動繼承article的特性 */
 			font-family: Roboto, sans-serif;
 		}
 
