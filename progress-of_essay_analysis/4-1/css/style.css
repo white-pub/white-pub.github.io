@@ -1,0 +1,29 @@
+
+/*
+google fonts: Lora (serif); Poppins (sana-serif);Source Sans Pro (sans-serif)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins&family=Source+Sans+Pro&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+	width: 100%;
+}
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: white;
+	color: #000a16;
+	font-family: Lora, serif;
+	font-size: 2vh;
+	line-height: 3vh;
+}
+h1,h2,h3 {
+	font-family: Poppins, sans-serif;
+}
