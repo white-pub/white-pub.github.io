@@ -27,3 +27,45 @@ body {
 h1,h2,h3 {
 	font-family: Poppins, sans-serif;
 }
+
+h1{
+	font-size: 4vh;
+	line-height: 6vh;
+	margin: 1vh 0;
+}
+
+h2{
+	font-size: 3vh;
+	line-height: 4.5vh;
+	margin: 0.8vh 0;
+}
+
+h3{
+	font-size: 2.4vh;
+	line-height: 3.6vh;
+	margin: 0.5vh 0;
+}
+
+article{
+	margin: 1.5vh 0;
+	padding: 1vh 5vh;
+}
+
+section {
+	margin: 1.2vh 0;
+}
+
+p {
+	margin: 0.2vh 0;
+}
+
+nav{ /*對應網頁最上面可以跳到各頁面的按鈕(連結)*/
+	font-family: poppins, sans-serif;
+	font-size: 3vh;
+	line-height: 4.5vh;
+	/* 讓它大一點，顯眼一些 */
+}
+
+a {/*a 是超連結 */
+	text-decoration: none;
+}
