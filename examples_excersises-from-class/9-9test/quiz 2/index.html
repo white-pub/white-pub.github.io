@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+	<head>
+		<title>Quiz 2</title>
+		<meta charset="utf-8">
+		<style>
+			/* Instruction: 
+			   1. Edit the CSS styles here to get things done, but DO NOT change the settings I made for you.
+			   2. Do not use the "style" attribute in any HTML element.
+			   3. Your CSS styles must be as simple as possible. */
+
+			
+			div:first-of-type {
+				position: relative;
+				top: 200px;
+				background-color: pink;
+			}
+
+			div:last-of-type {
+				position: fixed;
+				top: 20px;
+				right: 50px;
+				width: 300px;
+				background-color: blue;
+			}
+
+			div > p:first-of-type {
+				position: relative;
+				left: -50px;
+				background-color: orange;
+			}
+
+			div > p:last-of-type {
+				position: fixed;
+				right: 0;
+				bottom: 0;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			This div should be moved down from its original position by 200px.
+		</div>
+		<div>
+			This div should be placed in the top-right corner of the browser window, with a 20-px gap from the top edge of the window and a 50-px gap from the right edge of the window.
+			<p>
+				This paragraph should be moved left from its original position by 50px.
+			</p>
+			<p>
+				This paragraph should be aligned PERFECTLY to the bottom-right corner of the browser window.
+			</p>
+		</div>
+	</body>
+</html>
