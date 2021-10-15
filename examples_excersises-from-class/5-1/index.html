@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example 5-1: Inline vs. Block vs. Inline-block</title>
+	<link rel="stylesheet" type="text/css" href="../css/default.css">
+	<style>
+		body{
+			text-align: center;
+		}
+		span{
+			/*display: block;*/
+		}
+		/*span,*/div{
+			width: 150px;
+			height: 300px;}
+	</style>
+</head>
+<body>
+	<span style="background-color:orange;">
+		This is a text line.
+	</span>
+	<span style="background-color:orange;">This is another text line.</span>
+	<div style="background-color:pink;">
+		This is a block.
+	</div>
+	<div style="background-color:crimson;">
+		This is going to be an Inline-block.
+	</div>
+	<div style="background-color:purple;">
+		This is going to be an Inline-block.
+	</div>
+	<div style="background-color:limegreen; display: inline-block;">
+		This is going to be an Inline-block.
+	</div>
+	There are three inline blocks.
+</body>
+</html>

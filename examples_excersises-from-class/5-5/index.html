@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example 5-5: HTML Structure and CSS Psudo-class</title>
+	<link rel="stylesheet" type="text/css" href="../css/default.css">
+	<style>
+		body{
+			font-size: 24px;
+		}
+		p:first-of-type{
+			background-color: orange;
+		}
+		p:first-of-type:hover{
+			background-color: forestgreen;
+		}
+		/*div:last-of-type{
+			background-color: yellow;
+		}*/
+		div:not(:last-of-type){
+			background-color: cadetblue;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		This is a paragraph.
+	</p>
+	<div>
+		this is a div
+		<p>
+		another paragraph
+		</p>
+		<p>last paragraph</p>
+	</div>
+	<div>just another div</div>
+	<div>i don't like other div</div>
+</body>
+</html>
