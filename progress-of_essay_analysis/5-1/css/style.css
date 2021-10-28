@@ -1,0 +1,104 @@
+
+/*
+google fonts: Lora (serif); Poppins (sana-serif);Source Sans Pro (sans-serif)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins&family=Source+Sans+Pro&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+	width: 100%;
+}
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: white;
+	color: #000a16;
+	font-family: Lora, serif;
+	font-size: 2vh;
+	line-height: 3vh;
+}
+h1,h2,h3 {
+	font-family: Poppins, sans-serif;
+}
+
+h1{
+	font-size: 4vh;
+	line-height: 6vh;
+	margin: 1vh 0;
+}
+
+h2{
+	font-size: 3vh;
+	line-height: 4.5vh;
+	margin: 0.8vh 0;
+}
+
+h3{
+	font-size: 2.4vh;
+	line-height: 3.6vh;
+	margin: 0.5vh 0;
+}
+
+article{
+	margin: 1.5vh 0;
+	padding: 1vh 5vh;
+}
+
+section {
+	margin: 1.2vh 0;
+}
+
+section>p{
+	text-indent: 5%;
+}
+
+p {
+	margin: 0.2vh 0;
+}
+
+nav{ /*對應網頁最上面可以跳到各頁面的按鈕(連結)*/
+	position: fixed;
+	left: 10px;
+	top: 10px;
+	font-family: poppins, sans-serif;
+	font-size: 2vh;
+	line-height: 3vh;
+	/* 讓它大一點，顯眼一些 */
+}
+
+nav > a{
+	background-color: #323232;
+	color: white;
+	padding: 2px 4px;/*讓它內縮*/
+	text-decoration: none;
+	opacity: 0.6;/*約半透明*/
+	
+}
+
+nav>a:not(first-of-type){
+	border-left:solid 2px white ;
+}
+
+nav>a:(first-of-type){
+	width: 2.4vw;
+}
+
+nav > a: visited{/*被點擊後*/
+	color: white;
+}
+
+nav>a:hover{
+	opacity: 0.95;
+}
+
+a , a:visited {/*a 是超連結 */
+	color: #323232;
+	text-decoration: underline;
+}
