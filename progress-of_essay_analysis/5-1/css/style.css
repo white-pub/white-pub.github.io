@@ -82,15 +82,15 @@ nav > a{
 	
 }
 
-nav>a:not(first-of-type){
+nav>a:not(:first-of-type){
 	border-left:solid 2px white ;
 }
 
-nav>a:(first-of-type){
+nav>a:first-of-type {
 	width: 2.4vw;
 }
 
-nav > a: visited{/*被點擊後*/
+nav > a:visited{/*被點擊後*/
 	color: white;
 }
 
