@@ -3,8 +3,92 @@
 <head>
 	<meta charset="utf-8">
 	<title>autobiogrophy</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		html{
+			height: 100%;
+			width: 100%;
+		}
+
+		body {
+			overflow-x: hidden;
+			overflow-y: auto;
+			background-color: #ebf5fb;
+			/*font-family: Lora, serif;*/
+			font-size: 3.5vh;
+			line-height: 5vh;
+		}
+
+		nav{
+			position: fixed;
+		}
+		a{
+			background-color: turquoise;/*先暫時標出邊界*/
+			display:block;
+			position: relative;
+			width: 100px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			margin: 10%;
+		}
+
+		div{
+			width: 60%;
+			margin-left: 20%;
+		}
+		article{
+			background-color:  #fafdff ;
+			border-radius: 5px;
+			padding: 2% 4%;
+			position: relative;
+			left: 50%;
+			margin: 2%;
+			text-align: left;
+			transform: translateX(-50%);
+		}
+
+		article:first-of-type {
+			text-align: center;
+			width: 50%;
+			margin-top: 3%;
+			margin-bottom: 1%;
+		}
+
+		article > p{
+			margin: 4% 0;
+		}
+		article>p:first-of-type{
+			margin-top: 2%;
+		}
+		figure > img{
+			width: 100%;
+			height: auto;
+			position: relative;
+			margin-top:3%;
+			margin-bottom: 0;
+		}
+	</style>
 </head>
 <body>
+	<nav>
+		<a>Home</a>
+		<a>Item 2</a>
+		<a>Item 3</a>
+		<a>(語言切換)</a>
+	</nav>
+	<div>
+	<article>
+		<h1>
+			About me
+		</h1>
+	</article>
+
 	<article>
 		<p>
 			I am Anna, a junior in National Tsing Hua University who majors in Foreign Languages and Literature. I like to read all kinds of books, everything ranging from fiction to economics can appear in my booklist. In my free time, I also enjoy crafting, sewing, and drawing. 
@@ -21,7 +105,26 @@
 		<p>
 			After I familiarize myself with Python, I will start to work on combining my knowledge of human language and computer language, aiming to work in the field of artificial intelligence and human language in the future.
 		</p>
-		
 	</article>
+
+	<article>
+		<p>
+			大家好，我是Anna，目前大三，就讀國立清華大學外國語文學系。我喜歡閱讀，涉獵的領域五花八門，書單上什麼都有：奇幻、武俠、經濟、心理等都曾名列其中。閒暇時，我也喜歡做手工藝、縫紉和畫畫。
+		</p>
+		<p>
+			清大外文以數量眾多且內容豐富的語言學課程著名，我每學期都修好幾堂語言學領域的課，目標是畢業後至google之類的科技公司工作，善用語言學讓人類跟電腦能更順暢的溝通。
+		</p>
+		<p>
+			除了人類語言之外，我也需要熟悉程式語言，所以我這學期去選修資工系開設的python程式語言入門。幸好清大選課自由，要修其他系所的課程門檻也很低，我才能修到蔗糖程式語言入門。
+		</p>
+		<p>
+			之後，我想在科技業工作，並專攻人類語言跟人工智慧，所以熟悉python後，我會開始試著學習如何把程式語言跟人類語言相結合。
+		</p>
+	</article>
+	</div>
+
+	<figure style="text-align: center; "><!--讓圖片置中，位置標準-文字 -->
+			<img src="img/city.png" />
+	</figure>
 </body>
 </html>
