@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+	<title>12-5: interactive animation with jQuuery</title>
+	<script >
+		window.onload = function(){
+			$('button').eq(0).on('click',function(){
+				$('div').addClass('animated')};
+			$('button').eq(1).on('click',function(){
+				$('div').removeClass('animated');
+			});
+		}
+	</script>
+	<style >
+		div {
+			width: 100px;
+			height: 100px;
+		}
+
+		div.animated {
+			animation: bgChange 1s linear infinate alternate;
+		}
+
+		@keyframes bgChange{
+			0% {/*equivalemt to "from"(起點)*/
+				background-color: pink;
+
+			}
+
+			50% {
+				background-color: crimson;
+			}
+
+			100% {/* equivalent to "from"(終點) */
+				background-color: red;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>
+	</div>
+	<button>animate</button>
+	<button>off</button>
+</body>
+</html>

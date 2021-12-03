@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+	<head>
+		<title>Quiz 7</title>
+		<meta charset="utf-8">
+		<!-- Please have a copy of jQuery in the same folder -->
+		<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+		<script>
+			// Hint: Every time you hit the "Light up!" button, this variable increases by 1 (index += 1 or index = index + 1).
+			let index = 0;
+			window.onload = function() {
+ 				// Edit the jQuery event listener for the "Light up!" button here.
+ 				$('button').on('click', function() {
+					$('button').eq('index').on('click', function(){
+					$('span').addClass('animated')
+ 					index += 1;
+ 					console.log('index')
+ 				});
+			};
+		</script>
+		<style>
+			body {
+				text-align: center; /* Align all inline elements to the center */
+			}
+
+			span {
+				display: inline-block; /* set <span> to inline-block in order to set width and height */
+				width: 60px;
+				height: 60px;
+				margin: 10px;
+				background-color: red;
+				color: white;
+				font-family: sans-serif;
+				font-size: 50px;
+				line-height: 60px;
+				opacity: 0; /* All <span>s are hidden by setting their opacity to zero */
+			}
+
+			/* Edit the styles below this line, and  do not change anything above. */
+
+ 			/* Add the class "lightUp" to each <span> when the button is clicked and get the animinate to work. */
+			span.lightUp {
+				animation: lightUp 1s linear infinate alternate;
+			}
+
+ 			/* Set changes at 0%, 50%, and 100% for the background color */
+			@keyframes transColor {
+				0% {/*equivalemt to "from"(起點)*/
+					background-color: green;
+
+				}
+
+				50% {
+					background-color: crimson;
+					opacity: 50%;
+				}
+
+				100% {/* equivalent to "from"(終點) */
+					background-color: brown;
+					opacity: 100%;
+				}
+
+			}
+
+		</style>
+	</head>
+	<!-- Do not change anything in <body> -->
+	<body>
+		<p>
+			<span class="lightUp">
+				M
+			</span>
+			<span class="lightUp">
+				e
+			</span>
+			<span class="lightUp">
+				r
+			</span>
+			<span class="lightUp">
+				r
+			</span>
+			<span class="lightUp">
+				y
+			</span>
+			<span class="lightUp">
+				C
+			</span>
+			<span class="lightUp">
+				h
+			</span>
+			<span class="lightUp">
+				r
+			</span>
+			<span class="lightUp">
+				i
+			</span>
+			<span class="lightUp">
+				s
+			</span>
+			<span class="lightUp">
+				t
+			</span>
+			<span class="lightUp">
+				m
+			</span>
+			<span class="lightUp">
+				a
+			</span>
+			<span class="lightUp">
+				s
+			</span>
+			<span class="lightUp">
+				!
+			</span>
+		</p>
+		<button>Light up!</button>
+	</body>
+</html>

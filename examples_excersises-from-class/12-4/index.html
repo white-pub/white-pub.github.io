@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>12-4: keyframes and animation</title>
+	<style >
+		div {
+			width: 100px;
+			height: 100px;
+/*			animation: bgChange 1s linear 3;*//*最後一個3代表動畫要跑幾個循環*/
+/*			animation: bgChange 1s linear infinite forwards;
+forword 和reverse 代表動畫方向*/
+			animation: bgChange 1s linear alternate,beChange 2s ease-in-out infinite alternate;
+			/*alternate -循環繞一圈*/
+		}
+
+		@keyframes bgChange {
+			from{
+				background-color: red;
+			}
+
+			to {
+				background-color: orange;
+			}
+		}
+
+		@keyframes posChange {
+			from {
+				margin-left: 0;
+			}
+
+			to {
+				margin-left: 100px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>
+	</div>
+</body>
+</html>
