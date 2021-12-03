@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Example 9-3: ???</title>
+	<script type="text/javascript" src="demo.js"></script>
+	<style>
+		div.gold {
+			background-color: gold;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="group1">
+		div1
+		<p>
+			paragraph1
+		</p>
+	</div>
+	<div class="group1">
+		div2
+		<p>
+			paragraph2
+		</p>
+	</div>
+	<div class="group1" id="div3">
+		div3
+	</div>
+	<div class="group2" id="div4">
+		div4
+	</div>
+	<div class="group2">
+		div5
+	</div>
+	<div class="group2">
+		div6
+	</div><!--id相同名字不能出現兩次，如果重複出現，javascript那端取得元素時會出問題，例如漏掉 -->
+	<p>
+		paragraph3
+	</p>
+	<button id="changeDiv1">change div 1</button>
+	<button id="changeResetDiv1">Change/Reset Div 1</button>
+</body>
+</html>

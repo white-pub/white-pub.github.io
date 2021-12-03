@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+	<head>
+		<title>Quiz 6</title>
+		<script src="../jquery-3.6.0.min.js"></script>
+		<style>
+			/* Do NOT change anything in <style> */
+			div {
+				display: inline-block;
+				margin: 10px;
+				height: 50px;
+				width: 50px;
+				background-color: green;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+ 				let bodys = $('body > div')
+ 				$('body > button').eq(0).on('click',function(){
+					let CSS = {
+						'background-color':'red',
+						'height': '40px',
+						'width':'100px'
+					};
+					$(bodys.eq(0)).css(CSS);
+				};
+
+ 				$('body > button').eq(1).on('click',function(){
+					let CSS = {
+						'background-color':'black',
+						'height': '150px',
+						'width':'60px'
+					};
+					$(bodys.eq(1)).css(CSS);
+				};
+ 				
+ 				$('body > button').eq(2).on('click',function(){
+					let CSS = {
+						'background-color':'gold',
+						'height': '200px',
+						'width':'200px'
+					};
+					$(bodys.eq(2)).css(CSS);
+				};				
+			};
+		</script>
+	</head>
+	<body>
+		<!-- You can add attributes to any HTML element, but you cannot change/add/remove any HTML element -->
+		<div>1</div> <!-- The first <div> needs to have a red background color and a size of 100 x 40 px -->
+		<div>2</div> <!-- The second <div> needs to have a black background color and a size of 60 x 150 px -->
+		<div>3</div> <!-- The third <div> needs to have a gold background color and a size of 200 x 200 px -->
+		<!-- Each of the <button> below must change one <div> based on the text description -->
+		<button>Change Div 1</button>
+		<button>Change Div 2</button>
+		<button>Change Div 3</button>
+	</body>
+</html>
