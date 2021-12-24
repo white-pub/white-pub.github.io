@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>example 13-1: jQuery animation</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		window.onload = function() {
+			$('button#fadeOut').on('click',function(){
+				$('div#fading').fadeOut();
+			});
+
+			$('button#fadeIn').on('click',function(){
+				$('div#fading').fadeIn(300);
+			});//首先指定對象，接著指定效果
+
+			$('button#fadeTo').on('click',function(){
+				$('div#fading').fadeTo(500,0.5);//length is ms(毫秒) and opacity
+			});
+
+			$('button#hide').on('click',function(){
+				$('div#hiding').hide();//400 ms by defult
+			});
+			
+			$('button#show').on('click',function(){
+				$('div#hiding').show();
+			});
+
+			$('button#toggle').on('click',function(){
+				$('div#hiding').toggle(300);
+			});
+						
+
+			$('button#hide').on('click',function(){
+				$('div#hiding').hide();
+			});
+			
+			$('button#show').on('click',function(){
+				$('div#hiding').show();
+			});
+
+			$('button#toggle').on('click',function(){
+				$('div#hiding').toggle();
+			});
+					
+		}
+	</script>
+	<style>
+		div {
+			padding: 5px;/*padding 內縮*/
+			background-color: red;
+			color: white;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="fading">fade out</div>
+	<button id="fadeOut">fade out</button>
+	<button id="fadeIn">fade in</button>
+	<button id="fadeTo">fade to...</button>
+
+	<div id="hiding">Hiding</div>
+	<button id="hide">hide</button>
+	<button id="show">show</button>
+	<button id="toggle">toggle</button>
+
+	<div id="sliding">Sliding</div>
+	<button id="slideUp">slide up</button>
+	<button id="slideDown">slide down</button>
+	<button id="slideToggle">slide toggle</button>
+</body>
+</html>

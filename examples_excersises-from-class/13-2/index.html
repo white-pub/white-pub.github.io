@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>example 13-2:jQuery animation with  more flexibility</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		window.onload = function() {
+			$('button#changeSize').on('click', function(){
+				//animate() takes an object representing a CSS style and the time length
+				$('div#newSize').animate({
+					width:'100px',
+					height:'100px'
+				},1000);
+			});
+		}
+	</script>
+</head>
+<body>
+	<div id="newSize" style="width:50px; height: 50px; background-color: orange;"></div>
+	<button id="changeSize">change size</button>
+
+</body>
+</html>
