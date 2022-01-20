@@ -29,7 +29,9 @@
 			position: fixed;
 			top: 1%;
 			left: 0.5%;
+			width: 11%;
 		}
+
 
 		nav>a{
 			border-style: solid;
@@ -41,26 +43,20 @@
 			display:block;
 			border-radius: 5px;
 			position: relative;
-			width: 110px;
-			height: 30px;
+			width: 90%;
+			height: 5vh;
 			text-decoration: none;
 			font-weight: bold;
-			line-height: 30px;
+			font-size: 1.7vw;
 			text-align: left;
-			margin: 5% 10% 7% 35%;
+			margin: 5% 10% 7% 30%;
 			padding: 0 9%;
 		}
 
 		a>img{
-			width: 20px;
+			width: 2vw;
 			vertical-align: middle;
 			padding: 0 4% 4% 0;
-		}
-
-
-		.article{
-			width: 60%;
-			margin-left: 20%;
 		}
 
 		.right-picture{
@@ -74,7 +70,7 @@
 			text-align: center
 		}
 
-		figure> figcaption{
+		figure > figcaption{
 			text-align: center;
 			z-index:2;
 		}
@@ -106,6 +102,11 @@
 			margin-top: -4%;
 			margin-bottom: 1%;
 		}
+		
+		.article{
+			width: 60%;
+			margin-left: 20%;
+		}
 
 		article{
 			background-color:  #fefbfb ;/*可以偏米色*/
@@ -122,15 +123,17 @@
 			margin: 4% 0;
 		}
 
-		div > h2{
-			width: 30%;
-			color: white;
+		.title{
+			position: relative;
 			background-color:  #980303;
 			border-radius: 5px;
-			position: relative;
-			bottom: -25px;
-			margin-left: -8%;
+			width: 25%;
+			left: 15%;
+			margin: 2% 0 -2% 0;
 			padding: 2% 1%;
+			font-size: 2vw;
+			line-height: 1.1;
+			color: white;
 			text-align: center;
 			z-index:2;
 		}
@@ -148,8 +151,8 @@
 <body>
 
 	<nav>
-		<img src="img/menu.png" alt="menu" style="position: absolute;width: 120px;">
-		<a href="index_en.html" style="margin-top: 17%;"><img src="img/fire.png">Home</a>
+		<img src="img/menu.png" alt="menu" style="position: absolute;height: 120%;">
+		<a href="index_en.html" style="margin-top: 13%;"><img src="img/fire.png">Home</a>
 		<a href="featured_article_en.html"><img src="img/fire.png">AO3!! </a>
 		<a href="featured_article_cn.html"><img src="img/fire.png">中文版</a>
 	</nav>
@@ -163,7 +166,7 @@
 	</article>
 </div>
 
-	<div class="article">
+	<div class="title">
 		<h2>
 			Introduction
 		</h2>
@@ -198,7 +201,7 @@
 	</article>
 </div>
 
-	<div class="article">
+	<div class="title">
 		<h2>
 			Where to start
 		</h2>
@@ -246,7 +249,7 @@
 	</article>
 </div>
 
-	<div class="article">
+	<div class="title">
 		<h2>
 			Sharpen your English skill
 		</h2>
@@ -273,8 +276,8 @@
 	</article>
 </div>
 
-	<div class="article">
-		<h2 style="width:40%;position: center;">
+	<div class="title">
+		<h2>
 			Recommendation
 		</h2>
 	</div>
