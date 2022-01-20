@@ -28,23 +28,32 @@
 		nav{
 			position: fixed;
 		}
-		a{
-			background-color: turquoise;/*先暫時標出邊界*/
+
+		nav>a{
+			background-color: #F3EFE2;/*先暫時標出邊界*/
 			display:block;
+			border-radius: 5px;
 			position: relative;
 			width: 100px;
 			height: 30px;
 			text-decoration: none;
 			color: black;
 			line-height: 30px;
-			text-align: center;
-			margin: 10%;
+			text-align: left;
+			margin: 5% 10% 7% 35%;
+			padding: 0 9%;
 		}
+
+		a>img{
+			width: 20px;
+			vertical-align: middle;
+			padding: 0 4% 4% 0;
+		}
+
 
 		div{
 			width: 60%;
 			margin-left: 20%;
-
 		}
 
 		article{
@@ -53,36 +62,33 @@
 			padding: 2% 4%;
 			position: relative;
 			left: 50%;
-			margin: 2%;
+			margin: 0 2% 0 2% ;
 			text-align: left;
 			transform: translateX(-50%);
 		}
-/*
-		article:first-of-type {
-			text-align: center;
-			width: 50%;
-			margin-top: 3%;
-			margin-bottom: 1%;
-		}
-
-*/
 
 		article > p{
 			margin: 4% 0;
 		}
 
-		/*
-		article>p:first-of-type{
-			margin-top: 2%;
+		div > h2{
+			width: 30%;
+			/*margin-left: 15%;*/
+			background-color:  #40e0d0;
+			border-radius: 5px;
+			/*padding: 2% 4%;*/
+			position: relative;
+			bottom: -35px;
+			margin-left: -7%;
+			padding: 2% 1%;
+			text-align: center;
+			z-index:2;
 		}
-		*/
+
 		img{
 			width: 80%;
-			height: auto;
-			
+			height: auto;	
 			position: relative;
-			/*margin-top:3%;
-			margin-bottom: 0;*/
 		}
 		img#last{
 			width: 100%;
@@ -97,23 +103,32 @@
 
 
 <body>
+
 	<nav>
-		<a href="index.html">Home</a>
-		<a href="featured_article_en.html">AO3!! </a>
-		<a>Item 3</a>
-		<a href="featured_article_cn.html">切至中文</a>
+		<img src="img/menu.png" alt="menu" style="position: absolute;width: 120px;">
+		<a href="index_en.html" style="margin-top: 17%;"><img src="img/fire.png">Home</a>
+		<a href="featured_article_en.html"><img src="img/fire.png">AO3!! </a>
+		<a href="featured_article_cn.html"><img src="img/fire.png">中文版</a>
 	</nav>
-	<div>
-	<article style="text-align: center;padding: 3% 0;">
+
+
+<div>
+	<article style="text-align: center;padding: 3% 0; margin-top: 5%; margin-bottom: 0;">
 		<h1>
 			The fantastic world of AO3
 		</h1>
 	</article>
+</div>
 
-	<article><!-- 之一 -->
+	<div>
 		<h2>
 			Introduction
 		</h2>
+	</div>
+
+<div>
+	<article><!-- 之一 -->
+
 		<figure style="text-align: left; width: 30%;"><!--讓圖片置中，位置標準-文字 -->
 				<img src="img/intro__ao3_logo.png" />
 		</figure>
@@ -135,13 +150,17 @@
 
 		</p>
 	</article>
-	</div>
+</div>
 
 	<div>
-	<article ><!-- 之二 -->
 		<h2>
 			Where to start
 		</h2>
+	</div>
+
+<div>
+	<article ><!-- 之二 -->
+
 <!--
 		<figure style="text-align: right;width: 30% ;position: absolute;">
 				<img src="img/start_warnings.png" />
@@ -170,14 +189,16 @@
 		</figure>
 
 	</article>
-	</div>
+</div>
 
 	<div>
-	<article><!-- 之三 -->
 		<h2>
 			Sharpen your English skill
 		</h2>
-
+	</div>
+	
+<div>
+	<article><!-- 之三 -->
 		<p>
 			If you are looking for a way to sharpen your English skills, AO3 also has many resources. Reading the fanfics posted there, you could pick up all kinds of slang on your way and learn new words. Although there are many brilliant works on AO3, there are also works that contain a lot of typos and grammar errors, since there is no editor to edit the text before it gets published, most authors have to do the editing by themselves. Betas are like editors, they help the author revise his or her work. A fic that has a beta normally has much less spelling and grammar error.
 		</p>
@@ -190,13 +211,17 @@
 
 
 	</article>
-	</div>
+</div>
 
 	<div>
-	<article><!-- 之四 -->
-		<h2>
+		<h2 style="width:40%;position: center;">
 			Recommendation
 		</h2>
+	</div>
+	
+<div>
+	<article><!-- 之四 -->
+
 		<!--
 		<figure style="text-align: right; ">
 				<img src="img/city.png" />
@@ -216,7 +241,7 @@
 		</p>
 		
 	</article>
-	</div>
+</div>
 
 	<figure style="text-align: center; "><!--讓圖片置中，位置標準-文字 -->
 			<img id="last" src="img/city.png" />
