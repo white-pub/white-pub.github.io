@@ -58,6 +58,13 @@
 			margin-left: 20%;
 		}
 
+		.right-picture{
+			position: absolute;
+			width: 10%;
+			margin-left: 85%;
+		}
+
+
 		article{
 			background-color:  #fafdff ;/*可以偏米色*/
 			border-radius: 5px;
@@ -88,17 +95,20 @@
 		}
 
 		img{
-			width: 80%;
+			width: 100%;
 			height: auto;	
 			position: relative;
 		}
-		img#last{
+
+
+/*		img#last{
 			width: 100%;
 			height: auto;
 			position: relative;
 			margin-top:3%;
 			margin-bottom: 0;
 		}
+*/
 		
 	</style>
 </head>
@@ -122,18 +132,21 @@
 	</article>
 </div>
 
+
 	<div>
 		<h2>
 			Introduction
 		</h2>
 	</div>
+		
+	<figure class="right-picture" style="text-align: left;"><!--讓圖片置中，位置標準-文字 -->
+		<img src="img/ao3_logo.png" />
+	</figure>
 
 <div>
 	<article><!-- 之一 -->
 
-		<figure style="text-align: left; width: 30%;"><!--讓圖片置中，位置標準-文字 -->
-				<img src="img/intro__ao3_logo.png" />
-		</figure>
+
 		<p>
 			Archive of Our Own (AO3) is a website where people share their works with others. It is basically a repository hosting more than 7 million works that comes with a well-designed filter/search system. There are different types of work on AO3, including stories, drawings, and audiobooks.
 		</p>
