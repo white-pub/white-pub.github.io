@@ -25,38 +25,78 @@
 			line-height: 5vh;
 		}
 
-		nav{
+		nav a{
+			text-decoration: none;
+		}
+
+		.menu{
 			position: fixed;
 			top: 1%;
 			left: 0.5%;
 			width: 11%;
 		}
 
-
-		nav>a{
+		.menu>a{
+			position: absolute;
+			display:block;
+			left: 30%;
 			border-style: solid;
 			border-width: 1px;
-			border-radius: 2px;
+			border-radius: 5px;
 			border-color: #bda275;
 			background-color: #f5e7cf;
 			color: black;
-			display:block;
-			border-radius: 5px;
-			position: relative;
 			width: 90%;
-			height: 5vh;
-			text-decoration: none;
 			font-weight: bold;
 			font-size: 1.7vw;
+			line-height: 100%;
 			text-align: left;
-			margin: 5% 10% 7% 30%;
-			padding: 0 9%;
+			padding: 3% 9% 1% 9%;
+			z-index: 2;
 		}
 
 		a>img{
 			width: 2vw;
 			vertical-align: middle;
-			padding: 0 4% 4% 0;
+			padding: 0 4% 1% 0;
+		}
+
+		.scrollbar{
+			position: fixed;
+			top: 30%;
+			width: 14%;
+		}
+
+		.scrollbar > a{
+			position: absolute;
+			display:block;
+			left: 4%;
+			border-style: solid;
+			border-width: 1px;
+			border-radius: 5px;
+			border-color: #bda275;
+			background-color: #f5e7cf;
+			color: black;
+			width: 100%;
+			font-weight: bold;
+			font-size: 1.6vw;
+			line-height: 100%;
+			text-align: center;
+			padding: 3% 1% 3% 2%;
+			z-index: 2;
+		}
+
+		.scrollbar img{
+			position: absolute;
+			left: 0.5%;
+		}
+
+		.scrollbar-line {
+			border-left: 2px solid #be0303;
+			height: 45vh;
+			position: fixed;
+			left: 1.3%;
+			top: 37%;
 		}
 
 		.right-picture{
@@ -128,8 +168,8 @@
 			background-color:  #980303;
 			border-radius: 5px;
 			width: 25%;
-			left: 15%;
-			margin: 2% 0 -2% 0;
+			left: 16%;
+			margin: 2% 0 -2.5% 0;
 			padding: 2% 1%;
 			font-size: 2vw;
 			line-height: 1.1;
@@ -150,13 +190,30 @@
 
 <body>
 
-	<nav>
-		<img src="img/menu.png" alt="menu" style="position: absolute;height: 120%;">
-		<a href="index_en.html" style="margin-top: 3vh;"><img src="img/fire.png">Home</a>
-		<a href="featured_article_en.html"><img src="img/fire.png">AO3!! </a>
-		<a href="featured_article_cn.html"><img src="img/fire.png">中文版</a>
+	<nav class="menu">
+		<img src="img/menu.png" alt="menu" style="position: relative;z-index: 0;">
+		<a href="index_en.html" style="top: 10%;"><img src="img/fire.png">Home</a>
+		<a href="featured_article_en.html" style="top: 33%;"><img src="img/fire.png">AO3!! </a>
+		<a href="featured_article_cn.html" style="top: 55%;"><img src="img/fire.png">中文版</a>
 	</nav>
 
+	<nav>
+	<div class="scrollbar-line"></div>
+	<div class="scrollbar">
+		<a href="#p1_intro" style="margin-top: 7vh">
+			<img src="img/fire.png" >Intro
+		</a>
+		<a href="#p2_start" style="margin-top: 21vh;">
+			<img src="img/fire.png">Where to start
+		</a>
+		<a href="#p3_sharpen" style="margin-top: 36vh;">
+			<img src="img/fire.png">Sharpen your English skill
+		</a>
+		<a href="#p4_rec" style="margin-top: 52vh;			font-size: 1.5vw; padding: 3% 0 3% 7%;" >
+			<img src="img/fire.png">Recommendation
+		</a>
+	</div>
+	</nav>
 
 <div class="article">
 	<article style="text-align: center;padding: 3% 0; margin-top: 5%; margin-bottom: 0;">
@@ -166,13 +223,13 @@
 	</article>
 </div>
 
-	<div class="title">
+	<div class="title" id="p1_intro">
 		<h2>
 			Introduction
 		</h2>
 	</div>
 		
-	<figure class="right-picture"><!--讓圖片置中，位置標準-文字 -->
+	<figure class="right-picture">
 		<img src="img/ao3_logo.png" alt="Archive of Our Own logo"/>
 		<figcaption>AO3 logo</figcaption>
 	</figure>
@@ -201,13 +258,13 @@
 	</article>
 </div>
 
-	<div class="title">
+	<div class="title" id="p2_start">
 		<h2>
 			Where to start
 		</h2>
 	</div>
 
-	<figure class="right-picture" style="width:18.3%; margin-left: 81%; padding: 0.5% 0;"><!--讓圖片置中，位置標準-文字 -->
+	<figure class="right-picture" style="width:18.3%; margin-left: 81%; padding: 0.5% 0;">
 		<img src="img/start_filter_en.jpg" alt="AO3's tag filter column"/>
 		<figcaption style="margin-bottom: 2%;">Tag filter column</figcaption>
 	</figure>
@@ -249,7 +306,7 @@
 	</article>
 </div>
 
-	<div class="title">
+	<div class="title" id="p3_sharpen">
 		<h2>
 			Sharpen your English skill
 		</h2>
@@ -276,7 +333,7 @@
 	</article>
 </div>
 
-	<div class="title">
+	<div class="title" id="p4_rec">
 		<h2>
 			Recommendation
 		</h2>
