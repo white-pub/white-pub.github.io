@@ -53,17 +53,54 @@
 		}
 
 
-		div{
+		.article{
 			width: 60%;
 			margin-left: 20%;
 		}
 
 		.right-picture{
 			position: absolute;
-			width: 10%;
-			margin-left: 85%;
+			width: 12%;
+			margin-left: 84%;
+			background-color: #F6F9FB;
+			padding: 1%;
+			border-radius: 5px;
+			border-style: dashed;
+			text-align: center
 		}
 
+		figure> figcaption{
+			text-align: center;
+			z-index:2;
+		}
+
+		.grid{
+			display: grid;
+			grid-template-columns: 45% auto;
+			grid-gap: 1%;
+		}
+
+		article figure{
+			margin-top: -3%;
+			border-style: solid;
+			border-width: 1px;
+			border-radius: 5px;
+			padding: 1%;
+		}
+
+		article figcaption{
+			margin-top: -2.5%;
+			margin-bottom: 1%;
+		}
+
+		.grid figure{
+			padding: 1%;
+		}
+
+		.grid figcaption{
+			margin-top: -4%;
+			margin-bottom: 1%;
+		}
 
 		article{
 			background-color:  #fafdff ;/*可以偏米色*/
@@ -100,16 +137,6 @@
 			position: relative;
 		}
 
-
-/*		img#last{
-			width: 100%;
-			height: auto;
-			position: relative;
-			margin-top:3%;
-			margin-bottom: 0;
-		}
-*/
-		
 	</style>
 </head>
 
@@ -124,7 +151,7 @@
 	</nav>
 
 
-<div>
+<div class="article">
 	<article style="text-align: center;padding: 3% 0; margin-top: 5%; margin-bottom: 0;">
 		<h1>
 			The fantastic world of AO3
@@ -132,18 +159,18 @@
 	</article>
 </div>
 
-
-	<div>
+	<div class="article">
 		<h2>
 			Introduction
 		</h2>
 	</div>
 		
-	<figure class="right-picture" style="text-align: left;"><!--讓圖片置中，位置標準-文字 -->
-		<img src="img/ao3_logo.png" />
+	<figure class="right-picture"><!--讓圖片置中，位置標準-文字 -->
+		<img src="img/ao3_logo.png" alt="Archive of Our Own logo"/>
+		<figcaption>AO3 logo</figcaption>
 	</figure>
 
-<div>
+<div class="article">
 	<article><!-- 之一 -->
 
 
@@ -167,74 +194,88 @@
 	</article>
 </div>
 
-	<div>
+	<div class="article">
 		<h2>
 			Where to start
 		</h2>
 	</div>
 
-<div>
-	<article ><!-- 之二 -->
+	<figure class="right-picture" style="width:18.3%; margin-left: 81%; padding: 0.5% 0;"><!--讓圖片置中，位置標準-文字 -->
+		<img src="img/start_filter_en.jpg" alt="AO3's tag filter column"/>
+		<figcaption style="margin-bottom: 2%;">Tag filter column</figcaption>
+	</figure>
 
-<!--
-		<figure style="text-align: right;width: 30% ;position: absolute;">
-				<img src="img/start_warnings.png" />
-		</figure>
-		<figure style="text-align: right; width: 30%;position: absolute;">
-				<img src="img/start_categories.png" />
-		</figure>
--->
+<div class="article">
+	<article><!-- 之二 -->
 		<p>
 			If you already know the title of a work or the name of an author you are looking for, the fastest way to find it is to feed the information to google and add the keyword “ao3”.  However, when searching for new works in AO3, I highly recommend using the built-in search system of AO3. It has an amazing tagging system that comes with a powerful sort and filter function. There are tags for everything: name of the fandom a work belongs to, the rating of the work, warnings, characters that appear in it, the relationship of those characters, the worldview of the work, and anything the artist wants to include. I recommend checking “warnings” and excluding anything you do not like, this could decrease the chance of encountering works that contain contents you wish to avoid. Altering the setting of “fandoms”, “categories”, and “additional tags” will also help narrow down your search. The “M” and “F” in “categories” represent male and female respectively. Categories let users choose what kinds of relationships they wish to look for in a work.
 		</p>
+
+	<div class="grid">
+		<figure style="padding: 2% 1%;">
+			<img src="img/start_warning_en.jpg" alt="tag type: Archive Warnings"/>
+			<figcaption>Archive Warnings</figcaption>
+		</figure>
+
+		<figure>
+			<img src="img/start_categories_en.jpg" alt="tag type:Category" style="margin-top: 2%;" />
+			<figcaption>Category tags</figcaption>
+		</figure>
+	</div>
+		
 		<p>
 			<h3>Other tips</h3>
 			Another useful function in AO3 is the two modes of displaying a work. The default mode is to show a work chapter by chapter, but the “Entire work” mode is more convenient when users wish to search through the whole text for a keyword or quickly skim through the content.
 		</p>
+		<figure>
+			<img src="img/start_entire_en.jpg" alt="tip: entire work"/>
+			<figcaption>Button for Entire work</figcaption>
+		</figure>
 		<p>
 			AO3 supports text-based content the best, you could download any fanfic just by clicking. The work could be downloaded in many formats. For example: PDF, EPUB, AZW3, and HTML.  
 		</p>
-		<!--
-		<figure style="text-align: right; width:50%;">
-				<img src="img/start_chapter.png" />
-		</figure>
-	-->
-		<figure style="width:100%; "><!--位置標準-文字 -->
-				<img src="img/start_download.png" />
+		<figure>
+			<img src="img/start_download_en.jpg" alt="tip: download"/>
+			<figcaption>Button for Download</figcaption>
 		</figure>
 
 	</article>
 </div>
 
-	<div>
+	<div class="article">
 		<h2>
 			Sharpen your English skill
 		</h2>
 	</div>
 	
-<div>
+<div class="article">
 	<article><!-- 之三 -->
 		<p>
 			If you are looking for a way to sharpen your English skills, AO3 also has many resources. Reading the fanfics posted there, you could pick up all kinds of slang on your way and learn new words. Although there are many brilliant works on AO3, there are also works that contain a lot of typos and grammar errors, since there is no editor to edit the text before it gets published, most authors have to do the editing by themselves. Betas are like editors, they help the author revise his or her work. A fic that has a beta normally has much less spelling and grammar error.
 		</p>
+		<figure>
+			<img src="img/sharpen_beta.jpg" alt="betaed work"/>
+			<figcaption>Work's with a beta</figcaption>
+		</figure>
 		<p>
 			Aside from fictions, there are also numerous podfics (the audiobook version of a fanfic) that are suitable for practicing English listening on AO3. The advantage of podfics is that they are based on fanfics, which means you could find the full text version of a work. This makes it easy to look up and check words you did not understand when listening to the podfic. Also, the podfics and their text version are both free to download/stream. In addition, it provides you the chance to get used to different speeds of speech and accent. Because popular works have a higher chance of getting a podfic version, they mostly have a higher quality with less misspelling and sloppy grammar.
 		</p>
-		<figure style="text-align: left; "><!--讓圖片置中，位置標準-文字 -->
-				<img src="img/english_inspired.png" />
+		<figure>
+			<img src="img/sharpen_inspired_en.jpg" alt="The work that inspired the podfic"/>
+			<figcaption style="padding-top: 3%;">How to find the work that inspired the podfic</figcaption>
 		</figure>
 
 
 	</article>
 </div>
 
-	<div>
+	<div class="article">
 		<h2 style="width:40%;position: center;">
 			Recommendation
 		</h2>
 	</div>
 	
-<div>
+<div class="article">
 	<article><!-- 之四 -->
 
 		<!--
