@@ -1,0 +1,9 @@
+body {
+	background-color: #ebf5fb;
+}
+
+nav > a {
+	color: black;
+	background-color:#F7EFD9 ;/*深色#F7EFD9  fbf6ea*/
+	border-color: black;
+}

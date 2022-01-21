@@ -3,56 +3,25 @@
 <head>
 	<meta charset="utf-8">
 	<title>autobiogrophy</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="home.css">	
 	<style>
-		*{
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
+
+		nav>a{
+			font-family: Inter, sans-serif;
 		}
 
-		html{
-			height: 100%;
-			width: 100%;
+		h1,h2,h3 {
+			font-family:IBM Plex Serif, serif;
 		}
 
 		body {
-			overflow-x: hidden;
-			overflow-y: auto;
-			background-color: #ebf5fb;
-			/*font-family: Lora, serif;*/
-			font-size: 3.5vh;
-			line-height: 5vh;
+			font-family: Inter, sans-serif;
 		}
 
-		nav{
-			position: fixed;
-		}
-		a{
-			background-color: turquoise;/*先暫時標出邊界*/
-			display:block;
-			position: relative;
-			width: 100px;
-			height: 30px;
-			text-decoration: none;
-			color: black;
-			line-height: 30px;
-			text-align: center;
-			margin: 10%;
-		}
-
-		div{
-			width: 60%;
-			margin-left: 20%;
-		}
 		article{
 			background-color:  #fafdff ;/*可以偏米色*/
-			border-radius: 5px;
-			padding: 2% 4%;
-			position: relative;
-			left: 50%;
 			margin: 2%;
-			text-align: left;
-			transform: translateX(-50%);
 		}
 
 		article:first-of-type {
@@ -62,30 +31,21 @@
 			margin-bottom: 1%;
 		}
 
-		article > p{
-			margin: 4% 0;
-		}
 		article>p:first-of-type{
 			margin-top: 2%;
 		}
-		figure > img{
-			width: 100%;
-			height: auto;
-			position: relative;
-			margin-top:3%;
-			margin-bottom: 0;
-		}
+
 	</style>
 </head>
 <!-- 首頁/home -英文版  index.html-->
 <body>
 	<nav>
-		<a href="index.html">Home</a>
-		<a href="featured_article_en.html">AO3!!</a>
-		<a>Item 3</a>
-		<a href="index_cn.html">切至中文</a>
+		<img src="img/menu.png" alt="menu">
+		<a href="index_en.html" ><img src="img/fire.png">Home</a>
+		<a href="featured_article_en.html"><img src="img/fire.png">AO3!! </a>
+		<a href="index_cn.html"><img src="img/fire.png">中文版</a>
 	</nav>
-	<div>
+	<div class="article">
 	<article>
 		<h1>
 			About me
@@ -112,7 +72,7 @@
 
 	</div>
 
-	<figure style="text-align: center;"><!--讓圖片置中，位置標準-文字 -->
+	<figure>
 			<img src="img/city.png" />
 	</figure>
 </body>

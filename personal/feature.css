@@ -1,0 +1,143 @@
+
+body {
+	background-color: #EAD7D7;
+}
+
+nav > a {
+	border-color: #bda275;
+	background-color: #f5e7cf;
+	color: black;
+}
+
+.scrollbar{
+	position: fixed;
+	top: 30%;
+	width: 14.5%;
+	text-align: center;
+	z-index: 2;
+}
+
+.scrollbar > a{
+	position: absolute;
+	display:block;
+	left: 1.5%;
+	border-style: solid;
+	border-width: 1.2px;
+	border-radius: 5px;
+	border-color: #bf1d1a;
+	background-color:#F5F1F1;
+	color: black;
+	width: 100%;
+	font-size: 1.6vw;
+	line-height: 1;
+	padding: 1.1vh;
+	text-align:center;
+	z-index: 2;
+}
+
+.scrollbar > a:nth-child(1){
+	margin-top: 8vh;
+}
+
+.scrollbar > a:nth-child(2){
+	margin-top: 22vh;
+}
+
+.scrollbar > a:nth-child(3){
+	margin-top: 36vh;
+}
+
+.scrollbar > a:nth-child(4){
+	margin-top: 54vh;
+}
+
+
+.scrollbar img{
+	width: 1.5vw;
+	vertical-align: middle;
+}
+
+.scrollbar div{
+	position: relative;
+	padding: 0;
+}
+
+.scrollbar>a div:nth-child(2) {
+	height: 50%;
+	position: relative;
+	padding: 0;
+}
+
+.scrollbar-line {
+	border-left: 4px solid #be0303;
+	height: 50vh;
+	position: fixed;
+	left: 7.7%;
+	top: 38%;
+}
+
+.title{
+	position: relative;
+	background-color:  #980303;
+	border-radius: 5px;
+	width: 25%;
+	left: 16%;
+	margin: 2% 0 -2.5% 0;
+	padding: 2% 1.5% 2% 1%;
+	font-size: 1.7vw;
+	line-height: 1.1;
+	color: white;
+	text-align: center;
+	z-index:2;
+}
+
+.right-picture{
+	position: absolute;
+	background-color: #fcf8f8;
+	border-radius: 5px;
+	border-style: dashed;
+	text-align: center
+}
+
+.side-by-side{
+	position: relative;
+	width:100%;
+}
+
+.side-by-side > figure:first-of-type{
+	float: left;
+	width: 44%;
+}
+
+.side-by-side > figure:last-of-type{
+	float: right;
+	width: 54%;
+}
+
+article{
+	background-color:  #fefbfb ;
+	margin: 0 2% 5% 2% ;
+}
+
+figure > figcaption{
+	text-align: center;
+}
+
+article figure{
+	margin-top: -3%;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	padding: 1%;
+}
+
+article>figure:last-child{
+	margin-bottom: 3%;
+}
+
+article figcaption{
+	margin-top: -2%;
+	margin-bottom: 1%;
+}
+
+

@@ -1,110 +1,54 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="zh-TW">
 <head>
 	<meta charset="utf-8">
 	<title>featured article - cn</title>
 	<!-- 中文版!!! -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="feature.css">
 	<style>
-		*{
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
 
-		html{
-			height: 100%;
-			width: 100%;
-		}
-
-		body {
-			overflow-x: hidden;
-			overflow-y: auto;
-			background-color: #ebf5fb;
-			/*font-family: Lora, serif;*/
-			font-size: 3.5vh;
-			line-height: 5vh;
-		}
-
-		nav{
-			position: fixed;
-		}
-		a{
-			background-color: turquoise;/*先暫時標出邊界*/
-			display:block;
-			position: relative;
-			width: 100px;
-			height: 30px;
-			text-decoration: none;
-			color: black;
-			line-height: 30px;
-			text-align: center;
-			margin: 10%;
-		}
-
-		div{
-			width: 60%;
-			margin-left: 20%;
-
-		}
-
-		article{
-			background-color:  #fafdff ;/*可以偏米色*/
-			border-radius: 5px;
-			padding: 2% 4%;
-			position: relative;
-			left: 50%;
-			margin: 2%;
-			text-align: left;
-			transform: translateX(-50%);
-		}
-/*
-		article:first-of-type {
-			text-align: center;
-			width: 50%;
-			margin-top: 3%;
-			margin-bottom: 1%;
-		}
-
-	-*/
-
-		article > p{
-			margin: 4% 0;
-		}
-
-		/*
-		article>p:first-of-type{
-			margin-top: 2%;
-		}
-		*/
-		img{
-			width: 80%;
-			height: auto;
-			
-			position: relative;
-			/*margin-top:3%;
-			margin-bottom: 0;*/
-		}
-		img#last{
-			width: 100%;
-			height: auto;
-			position: relative;
-			margin-top:3%;
-			margin-bottom: 0;
-		}
-		
 	</style>
 </head>
 
 
 <body>
+	
 	<nav>
-		<a href="index.html">首頁</a>
-		<a href="featured_article_cn.html">AO3!! </a>
-		<a>Item 3</a>
-		<a href="featured_article_en.html">To EN</a>
+		<img src="img/menu.png" alt="menu">
+		<a href="index_cn.html" ><img src="img/fire.png">首頁</a>
+		<a href="featured_article_cn.html"><img src="img/fire.png">AO3!! </a>
+		<a href="index_en.html"><img src="img/fire.png">To EN</a>
 	</nav>
-	<div>
-	<article style="text-align: center;padding: 3% 0;">
+
+	<nav>
+	<div class="scrollbar-line"></div>
+	<div class="scrollbar">
+		<a href="#p1_intro">
+			<div>Part I</div>
+			<div><img src="img/fire.png"></div>
+			<div>Intro</div>
+		</a>
+		<a href="#p2_start">
+			<div>Part II</div>
+			<div><img src="img/fire.png"></div>
+			<div>Where to start</div>
+		</a>
+		<a href="#p3_sharpen">
+			<div>Part III</div>
+			<div><img src="img/fire.png"></div>
+			<div style="margin-top: -2%; line-height: 1.2;">Sharpen your English skill</div>
+		</a>
+		<a href="#p4_rec" style="margin-left:-0.2vw;width:103%">
+			<div>Part IV</div>
+			<div><img src="img/fire.png"></div>
+			<div style="font-size: 1.55vw;width: 110%;margin-left: -0.6vw;">Recommendation</div>
+		</a>
+	</div>
+	</nav>
+
+<div class="article">
+	<article style="text-align: center;padding: 3% 0; margin-top: 5%; margin-bottom: 0;">
 		<h1>
 			網路上的藏寶箱——AO3
 		</h1>
