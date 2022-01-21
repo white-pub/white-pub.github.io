@@ -1,18 +1,27 @@
 /*
 中文:
 導覽列-台北黑體
-	font-family: TaipeiSansTCBeta, sans-serif;
+	font-family: "TaipeiSansTCBeta", sans-serif;
 內文-台北黑體
-	font-family: TaipeiSansTCBeta, serif;
+	font-family: "TaipeiSansTCBeta", serif;
 標題-圓體
-	font-family: ResourceHanRoundedTC, sans-serif; 
+	font-family: "ResourceHanRoundedTC", sans-serif; 
 
+font-family: 'Heebo', sans-serif;
+
+font-family: 'IBM Plex Serif', serif;
+
+font-family: 'Inter', sans-serif;
+
+font-family: 'Josefin Slab', serif;
+
+font-family: 'Noticia Text', serif;
 
 英文:
 內文
-	font-family: Inter, sans-serif;
+	font-family: "Inter", sans-serif;
 標題
-	font-family:IBM Plex Serif, serif;
+	font-family:"IBM Plex Serif", serif;
 
 */
 
@@ -35,6 +44,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,600;0,700;1,400&family=Noticia+Text:wght@400;700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=IBM+Plex+Serif&family=Inter:wght@200;400&family=Josefin+Slab:wght@700&family=Noticia+Text&display=swap');
 
 
@@ -52,7 +63,7 @@ html{
 body {
 	overflow-x: hidden;
 	overflow-y: auto;
-	font-family: Inter, sans-serif;
+	font-family: "Inter", sans-serif;
 	font-family: TaipeiSansTCBeta, serif;
 	font-size: 3.5vh;
 	line-height: 5vh;
@@ -90,7 +101,7 @@ nav>a{
 	text-align: left;
 	padding: 1vh 0 1vh 9%;
 	z-index: 2;
-	font-family: Inter, sans-serif;
+	font-family: "Inter", sans-serif;
 	font-family: TaipeiSansTCBeta, sans-serif;
 }
 
@@ -126,7 +137,7 @@ body > figure:last-child{
 }
 
 h1,h2,h3 {
-	font-family:IBM Plex Serif, serif;
+	font-family:"IBM Plex Serif", serif;
 	font-family: ResourceHanRoundedTC, sans-serif; 
 }
 
