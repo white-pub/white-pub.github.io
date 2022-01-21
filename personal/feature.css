@@ -9,6 +9,12 @@ nav > a {
 	color: black;
 }
 
+.current-page{
+	color: white;
+	background-color: #d4962b;
+	border-color: #675130;
+}
+
 .scrollbar{
 	position: fixed;
 	top: 30%;
@@ -28,9 +34,6 @@ nav > a {
 	background-color:#F5F1F1;
 	color: black;
 	width: 100%;
-	font-size: 1.6vw;
-	line-height: 1;
-	padding: 1.1vh;
 	text-align:center;
 	z-index: 2;
 }
@@ -50,7 +53,6 @@ nav > a {
 .scrollbar > a:nth-child(4){
 	margin-top: 54vh;
 }
-
 
 .scrollbar img{
 	width: 1.5vw;
@@ -83,12 +85,10 @@ nav > a {
 	width: 25%;
 	left: 16%;
 	margin: 2% 0 -2.5% 0;
-	padding: 2% 1.5% 2% 1%;
-	font-size: 1.7vw;
-	line-height: 1.1;
+	font-size: 1.9vw;
 	color: white;
 	text-align: center;
-	z-index:2;
+	z-index:2
 }
 
 .right-picture{

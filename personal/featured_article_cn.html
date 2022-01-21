@@ -7,7 +7,52 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="feature.css">
 	<style>
+		.scrollbar > a{
+			font-size: 1.6vw;
+			line-height: 1;
+			padding: 1.2vh 0vh 0vh 0vh;
+		}
 
+		.scrollbar > a > div:first-of-type{
+			padding: 0vh 0vh 0vh 0vh;
+		}
+
+		.scrollbar > a > div:last-of-type{
+			padding: 1vh 0vh 0.5vh 0vh;
+		}
+
+		.scrollbar > a:nth-child(2){
+			margin-top: 23.5vh;
+		}
+
+		.scrollbar > a:nth-child(3){
+			margin-top: 39vh;
+		}
+
+		.title{
+			padding: 1.5%;
+		}
+
+		#p3_sharpen{
+			padding: 0.5% 1.5%;
+		}
+
+		#p3_sharpen p{
+			line-height: 1.5;
+		}
+		
+		#p4_rec{
+			padding: 0.5% 1.5%;
+		}
+
+		#p4_rec p{
+			line-height: 1.5;
+		}
+
+		#p4_rec p:last-of-type{
+			font-size: 2.2vw;
+			margin: 1% 0 2% 0;
+		}
 	</style>
 </head>
 
@@ -17,32 +62,33 @@
 	<nav>
 		<img src="img/menu.png" alt="menu">
 		<a href="index_cn.html" ><img src="img/fire.png">首頁</a>
-		<a href="featured_article_cn.html"><img src="img/fire.png">AO3!! </a>
-		<a href="index_en.html"><img src="img/fire.png">To EN</a>
+		<a href="featured_article_cn.html" class="current-page"><img src="img/fire.png">AO3!! </a>
+		<a href="featured_article_en.html"><img src="img/fire.png">To EN</a>
 	</nav>
 
 	<nav>
 	<div class="scrollbar-line"></div>
 	<div class="scrollbar">
 		<a href="#p1_intro">
-			<div>Part I</div>
+			<div>一</div>
 			<div><img src="img/fire.png"></div>
-			<div>Intro</div>
+			<div>簡介</div>
 		</a>
 		<a href="#p2_start">
-			<div>Part II</div>
+			<div>二</div>
 			<div><img src="img/fire.png"></div>
-			<div>Where to start</div>
+			<div>入門指南</div>
 		</a>
 		<a href="#p3_sharpen">
-			<div>Part III</div>
+			<div>三</div>
 			<div><img src="img/fire.png"></div>
-			<div style="margin-top: -2%; line-height: 1.2;">Sharpen your English skill</div>
+			<div style="margin-top: -2%; line-height: 1.2;">順便學英文 XD</div>
 		</a>
 		<a href="#p4_rec" style="margin-left:-0.2vw;width:103%">
-			<div>Part IV</div>
+			<div>四</div>
 			<div><img src="img/fire.png"></div>
-			<div style="font-size: 1.55vw;width: 110%;margin-left: -0.6vw;">Recommendation</div>
+			<div style="font-size: 1.55vw;width: 110%;margin-left: -0.6vw;">推坑時間！
+</div>
 		</a>
 	</div>
 	</nav>
@@ -63,7 +109,7 @@
 		
 	<figure class="right-picture" style="width: 12%;margin-left: 84%;padding: 1%;">
 		<img src="img/ao3_logo.png" alt="Archive of Our Own logo"/>
-		<figcaption>AO3 logo</figcaption>
+		<figcaption>AO3 標誌</figcaption>
 	</figure>
 
 <div class="article">
@@ -96,8 +142,8 @@
 	</div>
 
 	<figure class="right-picture" style="width:18.3%; margin-left: 81%; padding: 0.5% 0;">
-		<img src="img/start_filter_en.jpg" alt="AO3's tag filter column"/>
-		<figcaption style="margin-bottom: 2%;">Tag filter column</figcaption>
+		<img src="img/start_filter_cn.jpg" alt="AO3's tag filter column"/>
+		<figcaption style="margin-bottom: 2%;">標籤篩選欄</figcaption>
 	</figure>
 
 <div class="article">
@@ -110,16 +156,16 @@
 	<div class="side-by-side">
 
 		<figure>
-			<img src="img/start_warning_en.jpg" alt="tag type: Archive Warnings"/>
+			<img src="img/start_warning_cn.jpg" alt="tag type: Archive Warnings"/>
 			<figcaption>
-				Archive Warnings
+				各式雷點/警告篩選欄
 			</figcaption>
 		</figure>
 
 		<figure>
-			<img src="img/start_categories_en.jpg" alt="tag type: Category"/>
+			<img src="img/start_categories_cn.jpg" alt="tag type: Category"/>
 			<figcaption>
-				Category tags 
+				(感情線/性關係)分類篩選欄
 			</figcaption>
 		</figure>
 
@@ -132,15 +178,15 @@
 			Another useful function in AO3 is the two modes of displaying a work. The default mode is to show a work chapter by chapter, but the “Entire work” mode is more convenient when users wish to search through the whole text for a keyword or quickly skim through the content.
 		</p>
 		<figure>
-			<img src="img/start_entire_en.jpg" alt="tip: entire work"/>
-			<figcaption>Button for Entire work</figcaption>
+			<img src="img/start_entire_cn.jpg" alt="tip: entire work"/>
+			<figcaption>全文顯示鍵</figcaption>
 		</figure>
 		<p>
 			AO3 supports text-based content the best, you could download any fanfic just by clicking. The work could be downloaded in many formats. For example: PDF, EPUB, AZW3, and HTML.  
 		</p>
 		<figure>
-			<img src="img/start_download_en.jpg" alt="tip: download"/>
-			<figcaption>Button for Download</figcaption>
+			<img src="img/start_download_cn.jpg" alt="tip: download"/>
+			<figcaption>下載鍵</figcaption>
 		</figure>
 
 	</article>
@@ -148,7 +194,9 @@
 
 	<div class="title" id="p3_sharpen">
 		<h2>
-			看／聽小說，學英文
+			<p>看／聽小說，</p>
+			<p>學英文 XD	</p>
+
 		</h2>
 	</div>
 	
@@ -159,14 +207,14 @@
 		</p>
 		<figure>
 			<img src="img/sharpen_beta.jpg" alt="betaed work"/>
-			<figcaption>Work's with a beta</figcaption>
+			<figcaption>有Beta的作品</figcaption>
 		</figure>
 		<p>
 			Aside from fictions, there are also numerous podfics (the audiobook version of a fanfic) that are suitable for practicing English listening on AO3. The advantage of podfics is that they are based on fanfics, which means you could find the full text version of a work. This makes it easy to look up and check words you did not understand when listening to the podfic. Also, the podfics and their text version are both free to download/stream. In addition, it provides you the chance to get used to different speeds of speech and accent. Because popular works have a higher chance of getting a podfic version, they mostly have a higher quality with less misspelling and sloppy grammar.
 		</p>
 		<figure>
-			<img src="img/sharpen_inspired_en.jpg" alt="The work that inspired the podfic"/>
-			<figcaption style="padding-top: 3%;">How to find the work that inspired the podfic</figcaption>
+			<img src="img/sharpen_inspired_cn.jpg" alt="The work that inspired the podfic"/>
+			<figcaption style="padding-top: 3%;">如何找到有聲書的原文</figcaption>
 		</figure>
 
 
@@ -175,10 +223,8 @@
 
 	<div class="title" id="p4_rec">
 		<h2>
-			推坑時間，有神快拜！
-		</h2>
-		<h2 style="font-size:;">
-			優質作品、作者推薦
+			<p>推坑時間！</p>
+			<p>優質作品、作者推薦</p>
 		</h2>
 	</div>
 	

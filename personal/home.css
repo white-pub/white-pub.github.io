@@ -4,6 +4,10 @@ body {
 
 nav > a {
 	color: black;
-	background-color:#F7EFD9 ;/*深色#F7EFD9  fbf6ea*/
+	background-color:#fbf6ea ;/*深色#F7EFD9  fbf6ea*/
 	border-color: black;
+}
+
+.current-page{
+	background-color: #F7EFD9;
 }
