@@ -69,6 +69,7 @@ nav {
 	font-family: Poppins, sans-serif;
 	font-size: 2vh;
 	line-height: 3vh;
+	z-index: 2;/*不然在essay那一篇會被文章蓋到，區域重疊時無法正常運作*/
 }
 
 nav > a {
