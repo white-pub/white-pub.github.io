@@ -10,6 +10,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>autobiography</title>
+    <!-- use style.css -->
+    <link rel="stylesheet" type="text/css" href="style copy.css">
     <!-- using bootstrap -->
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
@@ -20,15 +22,101 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;600;700&family=Josefin+Slab:ital,wght@0,600;0,700;1,400&family=Noticia+Text:wght@400;700&display=swap" 
         rel="stylesheet"> 	
-    
+    <style>
+        .bg-lightbrown {
+            background-color: #f5e7cf; /* Use your preferred shade of light brown */
+        }
+    </style>    
 </head>
-<body>
-    <!-- nav bar -->
-    
-    <!-- article -->
-    <!-- article title -->
-    <!-- article content -->
+<body style="padding-top: 56px; " class="bg-danger-subtle text-emphasis-danger px-3">
+    <!-- fixed nav bar on page top-->
+    <nav class="navbar bg-lightbrown fixed-top ">
+        <div class="container-fluid">
+            <!-- Button to call out the off canvas navbar -->
+            <button class="navbar-toggler bg-body-tertiary h5 my-0" type="button" data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" 
+                aria-label="Toggle navigation">
+                <img src="img/fire.png" alt="Menu" 
+                    width="30" height="24" class="d-inline-block align-text-top">
+                Menu
+            </button>
+            <!-- offcanvas nav body -->
+            <div class="offcanvas offcanvas-start bg-lightbrown h4" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <img src="img/fire.png" alt="Home" width="35" height="30" class="d-inline-block align-text-top">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="featured_article_en.html">
+                                <img src="img/fire.png" width="30" height="24" class="d-inline-block align-text-top">
+                                AO3!!
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_zh.html">
+                                <img src="img/fire.png" width="30" height="24" class="d-inline-block align-text-top">
+                                中文版
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </nav>
+    <!-- Page title -->
+    <div class="container text-center mt-4">
+        <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-6 my-0">
+            <div class="card bg-body-tertiary">
+                <div class="card-body">
 
+                    <!-- text -->
+                    <h1>
+                        About me
+                    </h1>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- article content -->
+    <div class="container text-center mt-3 mb-2 ">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-sm-12">
+            <div class="card bg-body-tertiary">
+                <div class="card-body text-start fs-5">
+                    <!-- text -->
+                    <p class="card-text">
+                        I am Anna, a junior in National Tsing Hua University who majors in Foreign Languages and Literature. I like to read all kinds of books, everything ranging from fiction to economics can appear in my booklist. In my free time, I also enjoy crafting, sewing, and drawing. 
+                    </p>
+                    <p class="card-text">
+                        After I graduate, I wish to work in a technology company such as Google and use my linguistics knowledge to help the communication between human and computer become smoother.
+                    </p>
+                    <p class="card-text">
+                        To reach my goal, I took a lot of linguistics courses each semester, determined to make the most of my time at college, since the foreign language and literature department in National Tsing Hua University is famous for its abundant related courses and resources in linguistics. 
+                    </p>
+                    <p class="card-text">
+                        Our school policy makes it easy for students to take classes in other departments, so I am now learning basic programming skills in Introduction to Programming in Python, which is a course offered by the Department of Information Technology. 
+                    </p>
+                    <p class="card-text">
+                        After I familiarize myself with Python, I will start to work on combining my knowledge of human language and computer language, aiming to work in the field of artificial intelligence and human language in the future.
+                    </p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- background city img -->
 
     <!-- using bootstrap -->
     <script 
