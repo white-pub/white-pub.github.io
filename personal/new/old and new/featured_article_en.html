@@ -22,6 +22,7 @@
         rel="stylesheet"> 	
     <!-- use my own style.css -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="feature.css">
     <style>
         h1,h2,h3 {
 			font-family: 'Josefin Slab', serif;
@@ -42,11 +43,18 @@
             background-color: rgba(251, 246, 234, 0.66);
         }
 
+        .side-card{
+            background-color: rgb(252, 248, 248);
+            background-color: aqua;
+            position: relative;
+            width: 30%;
+            left: 110%;
+        }
 
     </style>    
 </head>
 
-<body class="bg-feature-page" style="padding-top: 56px; ">
+<body>
 
     <!-- fixed nav bar on page top-->
     <nav class="navbar fixed-top nav-fixed-bar-bg hide-on-lg">
@@ -243,13 +251,22 @@
             <div class="row justify-content-center">
                 <div class="card bg-feature-article py-2">
                     <div class="card-body text-start fs-5">
+                        
+                        <!-- side img on lg screen:ao3 logo -->
+                        <div class="card right-picture pt-4 show-on-lg">
+                            <img class="card-img-top" src="img/ao3_logo.png" alt="Card image" style="width:100%">
+                            <div class="card-body pb-0">
+                              <h3 class="card-title">AO3 Logo</h3>
+                            </div>
+                        </div>
+
                         <!-- text -->
                         <p>
                             Archive of Our Own (AO3) is a website where people share their works with others. It is basically a repository hosting more than 7 million works that comes with a well-designed filter/search system. There are different types of work on AO3, including stories, drawings, and audiobooks.
                         </p>
                         
                 <!-- modal button amd body -->
-                <div class="text-center">
+                <div class="text-center hide-on-lg">
                     
                     <!-- Button to trigger ao3 modal -->
                     <button type="button" class="btn modal-button mb-3" data-bs-toggle="modal" data-bs-target="#ao3Logo">
@@ -322,13 +339,22 @@
             <div class="row justify-content-center">
                 <div class="card bg-feature-article py-2">
                     <div class="card-body text-start fs-5">
+                        
+                        <!-- side img on lg screen:filter column -->
+                        <div class="card right-picture pt-4 show-on-lg">
+                            <img class="card-img-top" src="img/2_filter_column_en.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body pb-0">
+                                <h3 class="card-title">AO3 Logo</h3>
+                            </div>
+                        </div>
+                        
                         <!-- text -->
                         <p>
                             If you already know the title of a work or the name of an author you are looking for, the fastest way to find it is to feed the information to google and add the keyword “ao3”. However, when searching for new works in AO3, I highly recommend using the built-in search system. AO3 has an amazing tagging system that comes with a powerful sort and filter function. There are tags for everything: name of the fandom a work belongs to, the rating of the work, warnings, characters that appear in it, the relationship of those characters, the worldview of the work, and anything the artist wants to include. 
                         </p>
 
                 <!-- modal button amd body -->
-                <div class="text-center">
+                <div class="text-center hide-on-lg">
                     
                     <!-- Button to trigger filter column modal -->
                     <button type="button" class="btn modal-button mb-3" data-bs-toggle="modal" data-bs-target="#filterColumn">
@@ -360,7 +386,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                 </div>
@@ -369,6 +394,29 @@
                         <p>
                             I recommend checking “warnings” and excluding anything you do not like, this could decrease the chance of encountering works that contain contents you wish to avoid. Altering the setting of “fandoms”, “categories”, and “additional tags” will also help narrow down your search. The “M” and “F” in “categories” represent male and female respectively. Categories let users choose what kinds of romantic and/or sexual relationships they wish to look for in a work.
                         </p>
+                        
+                        <div class="card-group">
+                            <div class="card">
+                                <div class="card side-by-side">
+                                    <img src="img/2_warning_en.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h3 class="card-title">Archive Warnings</h3>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="card">
+                                <div class="card side-by-side">
+                                    <img src="img/2_categories_en.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h3 class="card-title">Category tags</h3>
+                                    </div>
+                                  </div>
+                            </div>
+
+
+                        </div>
+
+
                     </div>
                 </div>
             </div>
