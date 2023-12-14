@@ -24,100 +24,116 @@
         .bg-lightbrown {
             background-color: #f5e7cf; /* Use your preferred shade of light brown */
         }
-    </style>    
+
+        a>img{
+            width: 2vw;
+            vertical-align: middle;
+            padding: 0 4% 1% 0;
+        }
+        
+        .nav-card{
+            background: none; /* Remove background */
+            border: none; /* Remove border */
+        }
+        .bg-nav-fire{
+            background-color: rgba(237, 229, 221, 0.16);
+            border-radius: 50%;
+        }
+        
+        .nav-text-box{
+            background-color: rgb(251, 246, 234);
+            color: rgb(45, 45, 42);
+            border-style: solid;
+            border-width: 1px;
+        }
+
+        .nav-text{
+            text-decoration: none;
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            font-family: TaipeiSansTCBeta, sans-serif;
+            font-weight: 700;
+        }
+
+
+    </style>
+
 </head>
-<body style="padding-top: 56px; " class="bg-danger-subtle text-emphasis-danger px-3">
-    <!-- fixed nav bar on page top-->
-    <nav class="navbar bg-lightbrown fixed-top ">
-        <div class="container-fluid">
-            <!-- Button to call out the off canvas navbar -->
-            <button class="navbar-toggler bg-body-tertiary h5 my-0" type="button" data-bs-toggle="offcanvas" 
-                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" 
-                aria-label="Toggle navigation">
-                <img src="img/fire.png" alt="Menu" 
-                    width="30" height="24" class="d-inline-block align-text-top">
-                Menu
-            </button>
-            <!-- offcanvas nav body -->
-            <div class="offcanvas offcanvas-start bg-lightbrown h4" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="img/fire.png" alt="Home" width="30" height="24" class="d-inline-block align-text-top">
-                                Link
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="img/fire.png" alt="Home" width="30" height="24" class="d-inline-block align-text-top">
-                                Link
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="img/fire.png" alt="Home" width="30" height="24" class="d-inline-block align-text-top">
-                                Link
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-      </nav>
-    <!-- Page title -->
-    <div class="container text-center mt-4">
-        <div class="row justify-content-center">
-        <div class="col-md-8 col-sm-12">
-            <div class="card bg-body-tertiary">
-                <div class="card-body">
-                    <!-- text -->
-                    <h5 class="card-title">Card title</h5>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
+<body class="bg-lightbrown">
+    <div class="container-fluid bg-light">
+        <div class="row">
+            
+            <!-- the nav back ground picture in a card -->
+            <div class="col-lg-2 d-none d-lg-block mt-4">
+                <div class="card img-fluid nav-card">
+                    <img class="card-img-top px-0 " src="img/menu.png" alt="Card image" style="width:90%">
+                    <!-- where all the links are -->
+                    <div class="card-img-overlay px-0 py-0" style="left: 25%; top:15%; bottom: 20%;">
+                        <div class="container">
+                            <!-- 1st link -->
+                            <div class="row align-items-center mb-2">
+                                <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
+                                </div>
+                                <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 nav-text-box">
+                                    <h5 class="nav-text">
+                                        Home
+                                    </h5>   
+                                </div>
+                                </a>
 
-    <!-- article title -->
-    <div class="container text-center mt-4 mb-2">
-        <div class="row justify-content-center">
-          <div class="col-md-4 col-sm-6 ">
-            <div class="card bg-body-tertiary ">
-                <div class="card-body bg-danger text-white">
-                    <!-- text -->
-                    <h5 class="card-title">Card title</h5>
+                            </div>
+                            
+                            <!-- 2nd link -->
+                            <div class="row align-items-center mb-2">
+                                <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
+                                
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
+                                </div>
+                                <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 nav-text-box">
+                                    <h5 class="nav-text">
+                                        AO3!!
+                                    </h5>   
+                                </div>
+                                </a>
+
+                            </div>
+
+                            <!-- 3rd link -->
+                            <div class="row align-items-center ">
+                                <a href="featured_article_en.html" class="d-flex p-0 " style="text-decoration: none;">
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
+                                </div>
+                                <div class="col-sm-8  d-flex align-items-center rounded-3 ps-1 nav-text-box">
+                                    <h5 class="nav-text">
+                                        中文版
+                                    </h5>    
+                                    
+                                </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-          </div>
-        </div>
-    </div>
-    <!-- article content -->
-    <div class="container text-center mt-3 mb-2 ">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-sm-12">
-            <div class="card bg-body-tertiary">
-                <div class="card-body">
-                    <!-- text -->
-                    <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                    </p>
-                </div>
+            <!-- the articles -->
+            <div class="col-lg-8 col-md-9 col-sm-11 bg-dark text-white mx-auto mx-lg-0 ">
+                <h1>
+                    is test.html  
+                    use this for now
+                </h1> 
             </div>
-          </div>
         </div>
+
+        <h1>My First Bootstrap Page</h1>
+        <p>This is some text.</p>
     </div>
 
 
-    <!-- using bootstrap -->
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
-        crossorigin="anonymous">
-    </script>
+
 </body>
 </html>
