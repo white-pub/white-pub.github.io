@@ -1,6 +1,11 @@
+<!-- 
+    index.html
+    2023.12.4
+    English, Home page: autobiography/about me 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,88 +19,208 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;600;700&family=Josefin+Slab:ital,wght@0,600;0,700;1,400&family=Noticia+Text:wght@400;700&display=swap" 
-        rel="stylesheet"> 
+        rel="stylesheet"> 	
+    <!-- use my own style.css -->
+    <link rel="stylesheet" type="text/css" href="style copy 2.css">
     <style>
-        .bg-lightbrown {
-            background-color: #f5e7cf; /* Use your preferred shade of light brown */
-        }
-        nav a {
-            text-decoration: none;
+
+        .bg-home-page{
+            background-color: rgb(235, 245, 251);
         }
 
-        a>img {
-            width: 2vw;
-            vertical-align: middle;
-            padding: 0 4% 1% 0;
+        .bg-feature-article{
+            background-color: rgb(234, 215, 215);
         }
+
+
 
     </style>
 
 </head>
-
-<body class="bg-lightbrown">
+<body class="bg-home-page">
     <div class="container-fluid bg-light">
         <div class="row">
-
+            
             <!-- the nav back ground picture in a card -->
-            <div class="col-lg-2 d-none d-lg-block mt-4">
-                <div class="card img-fluid">
-                    <img class="card-img-top px-0" src="img/menu.png" alt="Card image" style="width:90%">
-<!-- where all the links are -->
-<div class="card-img-overlay px-0 py-0 bg-lightbrown" style="left: 25%; top:15%; bottom: 20%;">
-    <div class="container" style="height: 100%;"> <!-- Set the height to 100% -->
-        <!-- 1st link -->
-        <div class="row align-items-center mb-3">
-            <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
-                <div class="col-sm-4 bg-dark d-flex align-items-center justify-content-center">
-                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
-                </div>
-                <div class="col-sm-8 bg-primary text-white d-flex align-items-center ">
-                    Home
-                </div>
-            </a>
-        </div>
+            <div class="col-lg-2 show-on-lg mt-4">
+                <div class="card img-fluid nav-card">
+                    <img class="card-img-top px-0 " src="img/menu.png" alt="Card image" style="width:90%">
+                    <!-- where all the links are -->
+                    <div class="card-img-overlay px-0 py-0" style="left: 25%; top:15%; bottom: 20%;">
+                        <div class="container">
+                            <!-- 1st link -->
+                            <div class="row align-items-center mb-2">
+                                <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
+                                </div>
+                                <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 nav-text-box">
+                                    <h5 class="nav-text">
+                                        Home
+                                    </h5>   
+                                </div>
+                                </a>
 
-        <!-- 2nd link -->
-        <div class="row align-items-center mb-3">
-            <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
-                <div class="col-sm-4 bg-dark d-flex align-items-center justify-content-center">
-                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
-                </div>
-                <div class="col-sm-8 bg-primary text-white d-flex align-items-center ">
-                    Home
-                </div>
-            </a>
-        </div>
+                            </div>
+                            
+                            <!-- 2nd link -->
+                            <div class="row align-items-center mb-2">
+                                <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
+                                
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
+                                </div>
+                                <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 nav-text-box">
+                                    <h5 class="nav-text">
+                                        AO3!!
+                                    </h5>   
+                                </div>
+                                </a>
 
-        <!-- 3rd link -->
-        <div class="row align-items-center mb-3">
-            <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
-                <div class="col-sm-4 bg-dark d-flex align-items-center justify-content-center">
-                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
-                </div>
-                <div class="col-sm-8 bg-primary text-white d-flex align-items-center ">
-                    Home
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
+                            </div>
 
+                            <!-- 3rd link -->
+                            <div class="row align-items-center ">
+                                <a href="featured_article_en.html" class="d-flex p-0 " style="text-decoration: none;">
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center nav-fire-current-page">
+                                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
+                                </div>
+                                <div class="col-sm-8  d-flex align-items-center rounded-3 ps-1 nav-current-page">
+                                    <h5 class="nav-text">
+                                        中文版
+                                    </h5>    
+                                    
+                                </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- the articles -->
-            <div class="col-lg-8 col-md-9 col-sm-11 bg-dark text-white mx-auto mx-lg-0">
+
+
+            <!-- main content: articles and other stuff-->
+            <div class="col-lg-8 col-md-9 col-sm-11 bg-primary text-white mx-auto mx-lg-0 ">
+            
+                <div class="row show-on-lg" style="height: 56px;">
+                    <!-- this is just to move the page content down a little when on large screen -->
+                </div>
+                    
+                <!-- page title -->
+                <div class="container text-center mt-4">
+                    <div class="row justify-content-center">
+                        <div class="page-title">
+                            <div class="card bg-body-tertiary">
+                                <div class="card-body">
+                                    <h1>
+                                        About me
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- the articles -->
+                <!-- article section block title -->
+                <div class="container text-center" style="padding-left: 0;">
+                    <div class="row" >
+                        <div class="title">
+                            <div class="card title-text">
+                                <div class="card-body">
+                                    <h2 class="mb-0">
+                                        block title
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- article content -->
+                <div class="container text-center article-content mb-2">
+                    <div class="row justify-content-center">
+                        <div class="card bg-body-tertiary py-2">
+                            <div class="card-body text-start fs-5">
+                                <!-- text -->
+                                <p class="card-text">
+                                    I am Anna, a junior in National Tsing Hua University who majors in Foreign Languages and Literature. I like to read all kinds of books, everything ranging from fiction to economics can appear in my booklist. In my free time, I also enjoy crafting, sewing, and drawing. 
+                                </p>
+                                <p class="card-text">
+                                    After I graduate, I wish to work in a technology company such as Google and use my linguistics knowledge to help the communication between human and computer become smoother.
+                                </p>
+                                <p class="card-text">
+                                    To reach my goal, I took a lot of linguistics courses each semester, determined to make the most of my time at college, since the foreign language and literature department in National Tsing Hua University is famous for its abundant related courses and resources in linguistics. 
+                                </p>
+                                <p class="card-text">
+                                    Our school policy makes it easy for students to take classes in other departments, so I am now learning basic programming skills in Introduction to Programming in Python, which is a course offered by the Department of Information Technology. 
+                                </p>
+                                <p class="card-text">
+                                    After I familiarize myself with Python, I will start to work on combining my knowledge of human language and computer language, aiming to work in the field of artificial intelligence and human language in the future.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- article section block title -->
+                <div class="container text-center" style="padding-left: 0;">
+                    <div class="row" >
+                        <div class="title">
+                            <div class="card title-text">
+                                <div class="card-body">
+                                    <h2 class="mb-0">
+                                        block title
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- article content -->
+                <div class="container text-center article-content">
+                    <div class="row justify-content-center">
+                        <div class="card bg-body-tertiary py-2">
+                            <div class="card-body text-start fs-5">
+                                <!-- text -->
+                                <p class="card-text">
+                                    I am Anna, a junior in National Tsing Hua University who majors in Foreign Languages and Literature. I like to read all kinds of books, everything ranging from fiction to economics can appear in my booklist. In my free time, I also enjoy crafting, sewing, and drawing. 
+                                </p>
+                                <p class="card-text">
+                                    After I graduate, I wish to work in a technology company such as Google and use my linguistics knowledge to help the communication between human and computer become smoother.
+                                </p>
+                                <p class="card-text">
+                                    To reach my goal, I took a lot of linguistics courses each semester, determined to make the most of my time at college, since the foreign language and literature department in National Tsing Hua University is famous for its abundant related courses and resources in linguistics. 
+                                </p>
+                                <p class="card-text">
+                                    Our school policy makes it easy for students to take classes in other departments, so I am now learning basic programming skills in Introduction to Programming in Python, which is a course offered by the Department of Information Technology. 
+                                </p>
+                                <p class="card-text">
+                                    After I familiarize myself with Python, I will start to work on combining my knowledge of human language and computer language, aiming to work in the field of artificial intelligence and human language in the future.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+                
                 <h1>
-                    is test2.html  
-                 
-                </h1>
+                    is test.html  
+                    use this for now
+                </h1> 
+                <h2 class="hide-on-lg">
+                    See if show works
+                </h2>
             </div>
         </div>
 
         <h1>My First Bootstrap Page</h1>
         <p>This is some text.</p>
     </div>
-</body>
 
+
+
+</body>
 </html>

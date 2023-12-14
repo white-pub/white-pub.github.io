@@ -1,0 +1,230 @@
+/* General style:
+	nav bar style (not including phone nav bar "color")
+	page title style
+	article style
+	font style
+	end of page city picture style
+*/
+/*
+中文:
+導覽列-台北黑體
+	font-family: "TaipeiSansTCBeta", sans-serif;
+內文-台北黑體
+	font-family: "TaipeiSansTCBeta", serif;
+標題-圓體
+	font-family: "ResourceHanRoundedTC", sans-serif; 
+
+font-family: 'Heebo', sans-serif;
+font-family: 'Inter', sans-serif;
+
+font-family: 'Josefin Slab', serif;
+
+font-family: 'IBM Plex Serif', serif;
+
+不喜歡font-family: 'Noticia Text', serif;
+
+英文:
+導覽列
+
+進度條
+		.scrollbar > a{
+			font-family: 'Josefin Slab', serif;
+		}
+內文
+		font-family: 'Heebo', sans-serif;
+標題
+		font-family: 'Josefin Slab', serif;
+
+*/
+
+@font-face {
+  font-family: TaipeiSansTCBeta;
+  src: url(TaipeiSansTCBeta/TaipeiSansTCBeta-Regular.ttf);
+}
+
+@font-face {
+  font-family: TaipeiSansTCBeta;
+  src: url(TaipeiSansTCBeta/TaipeiSansTCBeta-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: ResourceHanRoundedTC;
+  src: url(RHR-TTF-0.990/ResourceHanRoundedTC-Regular.ttf);
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	font-family: TaipeiSansTCBeta, serif;
+}
+
+/* only show on lg screen and larger */
+.show-on-lg {
+	display: none; /* Hide by default */
+}
+
+@media (min-width: 993px) {
+	.show-on-lg {
+		display: block; /* Show on large screens (lg and above) */
+	}
+}
+
+/* only show on smaller than lg screens */
+.hide-on-lg {
+	display: none; /* Hide by default */
+}
+
+@media (max-width: 992px) {
+	.hide-on-lg {
+		display: block; /* Show on large screens (lg and above) */
+	}
+}
+
+/* about the nav bar */
+a>img{ /*make fire icon look good*/
+	width: 2vw;
+	vertical-align: middle;
+	padding: 0 4% 1% 0;
+}
+
+.nav-card{/* make sure the menu has transparent background */
+	background: none; /* Remove background */
+	border: none; /* Remove border */
+}
+
+.bg-nav-fire{/* half transparent background for fire icon */
+	background-color: rgba(237, 229, 221, 0.16);
+	border-radius: 50%;
+}
+
+.nav-text-box{
+	color: rgb(45, 45, 42);
+	background-color: rgb(251, 246, 234);
+	border-color: rgb(189, 162, 117);
+	border-style: solid;
+	border-width: 1px;
+	margin-left: 2px;
+}
+
+.nav-current-page{
+	color: rgb(45, 45, 42);
+	background-color: rgb(251, 246, 234);
+	border-color: rgba(213, 188, 145, 0.745);
+	font-weight: 900;
+	border-style: solid;
+	border-width: 2px;
+	margin-left: 2px;
+}
+
+.nav-fire-current-page{
+	background-color: rgba(255, 241, 132, 0.738);
+	border-radius: 50%;
+}
+
+.nav-text{
+	text-decoration: none;
+	margin: 0;
+	font-family: "Inter", sans-serif;
+	font-family: TaipeiSansTCBeta, sans-serif;
+	font-weight: 700;
+}
+
+.page-title{
+	width: 60%;
+}
+
+.article-content{
+	width: 90%;
+}
+
+/* article small block title */
+.title{
+	width: 50%;
+	margin-top: 3%;
+	margin-bottom: -15px;
+	padding-top: 15px;
+	padding-bottom: 0;
+	z-index: 1;
+}
+.title-text{
+	color: rgb(255, 255, 255);
+	background-color: rgb(152, 3, 3);
+	border: none;
+}
+
+/* img{
+	width: 100%;
+	height: auto;	
+	position: relative;
+} */
+
+/* body > figure:last-child{
+	position: relative;
+	margin-top: 3%;
+	line-height: 0;
+	z-index: -1;
+} */
+
+h1,h2,h3 {
+	font-family:"IBM Plex Serif", serif;
+	font-family: ResourceHanRoundedTC, sans-serif; 
+	font-weight: 800;
+} 
+
+/* h1{
+	font-size: 8vh;
+	line-height: 10vh;
+	margin: 1vh 0;
+} */
+
+/* h3{
+	font-size: 5vh;
+	line-height: 7.5vh;
+	margin: 2vh 0 1.5vh 0;
+	font-weight: bold;
+} */
+	
+/* .article{
+	width: 60%;
+	margin-left: 20%;
+} */
+
+/* article{
+	border-radius: 5px;
+	padding: 2% 4%;
+	position: relative;
+	left: 50%;
+	text-align: left;
+	transform: translateX(-50%);
+} */
+
+/* article > p{
+	margin: 4% 0;
+} */
+
+/* section {
+	margin: 1.2vh 0;
+} */
+
+/* section > p {
+	text-indent: 5%;
+} */
+
+/* p {
+	margin: 0.2vh 0;
+} */
+
+
+
