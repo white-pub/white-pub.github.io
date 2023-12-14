@@ -70,11 +70,12 @@ body {
 	font-family: TaipeiSansTCBeta, serif;
 }
 
+/* different body background color */
 .bg-home-page{
 	background-color: rgb(235, 245, 251);
 }
 
-.bg-feature-article{
+.bg-feature-page{
 	background-color: rgb(234, 215, 215);
 }
 
@@ -100,7 +101,40 @@ body {
 	}
 }
 
-/* about the nav bar */
+
+/* nav bar for mobil defult is home page color*/
+
+.nav-fixed-bar-bg{
+	background-color: rgb(11, 181, 173);
+}
+
+.nav-fixed-bar-text{
+	font-weight: 700;
+	color: rgb(5, 63, 60);
+	background-color: rgba(251, 246, 234, 0.42);
+	border: none;
+}
+
+.offcanvas-header{
+	color: rgb(248, 248, 248); 
+	background-color: rgb(189, 162, 117);
+}
+
+.offcanvas-body{
+	background-color: rgb(245, 231, 207);
+}
+
+.offcanvas-text{
+	text-decoration: none;
+	color: black;
+	margin: 0;
+	font-family: "Inter", sans-serif;
+	font-family: TaipeiSansTCBeta, sans-serif;
+	font-weight: 700;
+}
+
+
+/* nav bar for big screen*/
 a>img{ /*make fire icon look good*/
 	width: 2vw;
 	vertical-align: middle;
@@ -149,6 +183,21 @@ a>img{ /*make fire icon look good*/
 	font-weight: 700;
 }
 
+/* card style and article/title background */
+.card{
+	border: none;
+}
+
+.bg-home-article{
+	background-color: rgb(250, 253, 255);
+}
+
+.bg-feature-article{
+	background-color: rgb(254, 251, 251);
+}
+
+
+/* article and title styling */
 .page-title{
 	width: 60%;
 }
@@ -159,31 +208,20 @@ a>img{ /*make fire icon look good*/
 
 /* article small block title */
 .title{
-	width: 50%;
+	width: 55%;
 	margin-top: 3%;
 	margin-bottom: -15px;
 	padding-top: 15px;
 	padding-bottom: 0;
 	z-index: 1;
 }
+
 .title-text{
 	color: rgb(255, 255, 255);
 	background-color: rgb(152, 3, 3);
 	border: none;
 }
 
-/* img{
-	width: 100%;
-	height: auto;	
-	position: relative;
-} */
-
-/* body > figure:last-child{
-	position: relative;
-	margin-top: 3%;
-	line-height: 0;
-	z-index: -1;
-} */
 
 h1,h2,h3 {
 	font-family:"IBM Plex Serif", serif;
@@ -191,48 +229,15 @@ h1,h2,h3 {
 	font-weight: 800;
 } 
 
-/* h1{
-	font-size: 8vh;
-	line-height: 10vh;
-	margin: 1vh 0;
-} */
+/* modal styling */
+.modal-button{
+	color: rgb(45, 45, 42);
+	background-color: rgb(251, 246, 234);
+	border-color: rgba(213, 188, 145, 0.745);
+	font-weight: 900;
+	border-style: solid;
+	border-width: 2px;
+}
 
-/* h3{
-	font-size: 5vh;
-	line-height: 7.5vh;
-	margin: 2vh 0 1.5vh 0;
-	font-weight: bold;
-} */
 	
-/* .article{
-	width: 60%;
-	margin-left: 20%;
-} */
-
-/* article{
-	border-radius: 5px;
-	padding: 2% 4%;
-	position: relative;
-	left: 50%;
-	text-align: left;
-	transform: translateX(-50%);
-} */
-
-/* article > p{
-	margin: 4% 0;
-} */
-
-/* section {
-	margin: 1.2vh 0;
-} */
-
-/* section > p {
-	text-indent: 5%;
-} */
-
-/* p {
-	margin: 0.2vh 0;
-} */
-
-
 

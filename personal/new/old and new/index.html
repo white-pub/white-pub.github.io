@@ -21,19 +21,113 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;600;700&family=Josefin+Slab:ital,wght@0,600;0,700;1,400&family=Noticia+Text:wght@400;700&display=swap" 
         rel="stylesheet"> 	
     <!-- use my own style.css -->
-    <link rel="stylesheet" type="text/css" href="style copy 2.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-
-</style>
-
+        
+    </style>    
 </head>
-<body class="bg-home-page">
-    <div class="container-fluid bg-light">
+<body class="bg-home-page" style="padding-top: 56px; ">
+
+    <!-- fixed nav bar on page top-->
+    <nav class="navbar fixed-top nav-fixed-bar-bg hide-on-lg">
+        <div class="container-fluid">
+            <!-- Button to call out the off canvas navbar -->
+            <button class="navbar-toggler h5 my-0 nav-fixed-bar-text " type="button" data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" 
+                aria-label="Toggle navigation">
+                <img src="img/fire.png" alt="Menu" 
+                    width="30" height="24" class="d-inline-block align-text-top">
+                Menu
+            </button>
+            <!-- offcanvas nav body -->
+            <div class="offcanvas offcanvas-start  h4" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header" >
+                <h5 class="offcanvas-title fs-2" id="offcanvasNavbarLabel" style="padding-left: 35px;" >Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" >
+                        <div class="container">
+                            <!-- 1st link -->
+                            <div class="row align-items-center mb-3">
+                                <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                    <img src="img/fire.png"  width="30" height="24"">
+                                </div>
+                                <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 ">
+                                    <h5 class="offcanvas-text">
+                                        Home
+                                    </h5>   
+                                </div>
+                                </a>
+
+                            </div>
+                            
+                            <!-- 2nd link -->
+                            <div class="row align-items-center mb-3">
+                                <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
+                                
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                    <img src="img/fire.png"  width="30" height="24"">
+                                </div>
+                                <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 ">
+                                    <h5 class="offcanvas-text">
+                                        AO3!!
+                                    </h5>   
+                                </div>
+                                </a>
+
+                            </div>
+
+                            <!-- 3rd link -->
+                            <div class="row align-items-center ">
+                                <a href="featured_article_en.html" class="d-flex p-0 " style="text-decoration: none;">
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center">
+                                    <img src="img/fire.png"  width="30" height="24"">
+                                </div>
+                                <div class="col-sm-8  d-flex align-items-center rounded-3 ps-1 ">
+                                    <h5 class="offcanvas-text">
+                                        中文版
+                                    </h5>    
+                                    
+                                </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <img src="img/fire.png" alt="Home" width="35" height="30" class="d-inline-block align-text-top">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="featured_article_en.html">
+                                <img src="img/fire.png" width="30" height="24" class="d-inline-block align-text-top">
+                                AO3!!
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_zh.html">
+                                <img src="img/fire.png" width="30" height="24" class="d-inline-block align-text-top">
+                                中文版
+                            </a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- all the content including nav on lg screen -->
+    <div class="container-fluid">
         <div class="row">
             
+            <!-- nav on big screen -->
             <!-- the nav back ground picture in a card -->
             <div class="col-lg-2 show-on-lg mt-4">
-                <div class="card img-fluid nav-card">
+                <div class="card img-fluid nav-card sticky-top">
                     <img class="card-img-top px-0 " src="img/menu.png" alt="Card image" style="width:90%">
                     <!-- where all the links are -->
                     <div class="card-img-overlay px-0 py-0" style="left: 25%; top:15%; bottom: 20%;">
@@ -89,19 +183,13 @@
                 </div>
             </div>
 
-
             <!-- main content: articles and other stuff-->
-            <div class="col-lg-8 col-md-9 col-sm-11 bg-primary text-white mx-auto mx-lg-0 ">
-            
-                <div class="row show-on-lg" style="height: 56px;">
-                    <!-- this is just to move the page content down a little when on large screen -->
-                </div>
-                    
+            <div class="col-lg-8 col-md-9 col-sm-11 mx-auto mx-lg-0 ">
                 <!-- page title -->
                 <div class="container text-center mt-4">
                     <div class="row justify-content-center">
                         <div class="page-title">
-                            <div class="card bg-body-tertiary">
+                            <div class="card bg-home-article">
                                 <div class="card-body">
                                     <h1>
                                         About me
@@ -113,25 +201,10 @@
                 </div>
 
                 <!-- the articles -->
-                <!-- article section block title -->
-                <div class="container text-center" style="padding-left: 0;">
-                    <div class="row" >
-                        <div class="title">
-                            <div class="card title-text">
-                                <div class="card-body">
-                                    <h2 class="mb-0">
-                                        block title
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- article content -->
-                <div class="container text-center article-content mb-2">
+                <div class="container text-center article-content my-3">
                     <div class="row justify-content-center">
-                        <div class="card bg-body-tertiary py-2">
+                        <div class="card bg-home-article py-2">
                             <div class="card-body text-start fs-5">
                                 <!-- text -->
                                 <p class="card-text">
@@ -154,63 +227,29 @@
                     </div>
                 </div>
 
-                <!-- article section block title -->
-                <div class="container text-center" style="padding-left: 0;">
-                    <div class="row" >
-                        <div class="title">
-                            <div class="card title-text">
-                                <div class="card-body">
-                                    <h2 class="mb-0">
-                                        block title
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- article content -->
-                <div class="container text-center article-content">
-                    <div class="row justify-content-center">
-                        <div class="card bg-body-tertiary py-2">
-                            <div class="card-body text-start fs-5">
-                                <!-- text -->
-                                <p class="card-text">
-                                    I am Anna, a junior in National Tsing Hua University who majors in Foreign Languages and Literature. I like to read all kinds of books, everything ranging from fiction to economics can appear in my booklist. In my free time, I also enjoy crafting, sewing, and drawing. 
-                                </p>
-                                <p class="card-text">
-                                    After I graduate, I wish to work in a technology company such as Google and use my linguistics knowledge to help the communication between human and computer become smoother.
-                                </p>
-                                <p class="card-text">
-                                    To reach my goal, I took a lot of linguistics courses each semester, determined to make the most of my time at college, since the foreign language and literature department in National Tsing Hua University is famous for its abundant related courses and resources in linguistics. 
-                                </p>
-                                <p class="card-text">
-                                    Our school policy makes it easy for students to take classes in other departments, so I am now learning basic programming skills in Introduction to Programming in Python, which is a course offered by the Department of Information Technology. 
-                                </p>
-                                <p class="card-text">
-                                    After I familiarize myself with Python, I will start to work on combining my knowledge of human language and computer language, aiming to work in the field of artificial intelligence and human language in the future.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>    
                 
-                <h1>
-                    is test.html  
-                    use this for now
-                </h1> 
-                <h2 class="hide-on-lg">
-                    See if show works
-                </h2>
-            </div>
-        </div>
 
-        <h1>My First Bootstrap Page</h1>
-        <p>This is some text.</p>
+        </div>
+        
+        <!-- just to add space between bottom img and article -->
+        <div class="container" style="height: 30px;"></div>
+        <!-- background city img -->
+        <div class="row mb-0 my-0 px-0" >
+            <img src="img/city.png" alt="Bottom Image" class="w-100 px-0">
+        </div>
+    
     </div>
 
 
 
+
+    <!-- using bootstrap -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous">
+    </script>
 </body>
 </html>

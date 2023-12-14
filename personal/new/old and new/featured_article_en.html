@@ -1,0 +1,398 @@
+<!-- 
+    featured_article_en.html
+    2023.12.4
+    English, Featured article: about ao3
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autobiography</title>
+    <!-- using bootstrap -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+    <!-- Other style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;600;700&family=Josefin+Slab:ital,wght@0,600;0,700;1,400&family=Noticia+Text:wght@400;700&display=swap" 
+        rel="stylesheet"> 	
+    <!-- use my own style.css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        h1,h2,h3 {
+			font-family: 'Josefin Slab', serif;
+            margin: 0;
+		}
+		
+		body {
+			font-family: 'Heebo', sans-serif;
+		}
+
+        /* over-ride to make mobile nav match page color */
+        .nav-fixed-bar-bg{
+            background-color: rgb(152, 3, 3);
+        }
+        .nav-fixed-bar-text{
+            font-weight: 700;
+            color: rgb(24, 0, 0);
+            background-color: rgba(251, 246, 234, 0.66);
+        }
+
+
+    </style>    
+</head>
+
+<body class="bg-feature-page" style="padding-top: 56px; ">
+
+    <!-- fixed nav bar on page top-->
+    <nav class="navbar fixed-top nav-fixed-bar-bg hide-on-lg">
+        <div class="container-fluid">
+            <!-- Button to call out the off canvas navbar -->
+            <button class="navbar-toggler h5 my-0 nav-fixed-bar-text " type="button" data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" 
+                aria-label="Toggle navigation">
+                <img src="img/fire.png" alt="Menu" 
+                    width="30" height="24" class="d-inline-block align-text-top">
+                Menu
+            </button>
+            <!-- offcanvas nav body -->
+            <div class="offcanvas offcanvas-start  h4" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header" >
+                <h5 class="offcanvas-title fs-2" id="offcanvasNavbarLabel" style="padding-left: 35px;" >Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" >
+                        <div class="container">
+                            <!-- 1st link -->
+                            <div class="row align-items-center mb-3">
+                                <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                    <img src="img/fire.png"  width="30" height="24"">
+                                </div>
+                                <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 ">
+                                    <h5 class="offcanvas-text">
+                                        Home
+                                    </h5>   
+                                </div>
+                                </a>
+
+                            </div>
+                            
+                            <!-- 2nd link -->
+                            <div class="row align-items-center mb-3">
+                                <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
+                                
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                    <img src="img/fire.png"  width="30" height="24"">
+                                </div>
+                                <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 ">
+                                    <h5 class="offcanvas-text">
+                                        AO3!!
+                                    </h5>   
+                                </div>
+                                </a>
+
+                            </div>
+
+                            <!-- 3rd link -->
+                            <div class="row align-items-center ">
+                                <a href="featured_article_en.html" class="d-flex p-0 " style="text-decoration: none;">
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center">
+                                    <img src="img/fire.png"  width="30" height="24"">
+                                </div>
+                                <div class="col-sm-8  d-flex align-items-center rounded-3 ps-1 ">
+                                    <h5 class="offcanvas-text">
+                                        中文版
+                                    </h5>    
+                                    
+                                </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <img src="img/fire.png" alt="Home" width="35" height="30" class="d-inline-block align-text-top">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="featured_article_en.html">
+                                <img src="img/fire.png" width="30" height="24" class="d-inline-block align-text-top">
+                                AO3!!
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_zh.html">
+                                <img src="img/fire.png" width="30" height="24" class="d-inline-block align-text-top">
+                                中文版
+                            </a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- all the content including nav on lg screen -->
+    <div class="container-fluid">
+        <div class="row">
+            
+            <!-- the nav back ground picture in a card -->
+            <div class="col-lg-2 show-on-lg mt-4">
+                <div class="card img-fluid nav-card sticky-top" >
+                    <img class="card-img-top px-0 " src="img/menu.png" alt="Card image" style="width:90%">
+                    <!-- where all the links are -->
+                    <div class="card-img-overlay px-0 py-0" style="left: 25%; top:15%; bottom: 20%;">
+                        <div class="container">
+                            <!-- 1st link -->
+                            <div class="row align-items-center mb-2">
+                                <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
+                                </div>
+                                <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 nav-text-box">
+                                    <h5 class="nav-text">
+                                        Home
+                                    </h5>   
+                                </div>
+                                </a>
+
+                            </div>
+                            
+                            <!-- 2nd link -->
+                            <div class="row align-items-center mb-2">
+                                <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
+                                
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
+                                </div>
+                                <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 nav-text-box">
+                                    <h5 class="nav-text">
+                                        AO3!!
+                                    </h5>   
+                                </div>
+                                </a>
+
+                            </div>
+
+                            <!-- 3rd link -->
+                            <div class="row align-items-center ">
+                                <a href="featured_article_en.html" class="d-flex p-0 " style="text-decoration: none;">
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center nav-fire-current-page">
+                                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
+                                </div>
+                                <div class="col-sm-8  d-flex align-items-center rounded-3 ps-1 nav-current-page">
+                                    <h5 class="nav-text">
+                                        中文版
+                                    </h5>    
+                                    
+                                </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    <!-- main content: articles and other stuff-->
+    <div class="col-lg-8 col-md-9 col-sm-11 mx-auto mx-lg-0 ">
+                        
+        <!-- page title -->
+        <div class="container text-center mt-4">
+            <div class="row justify-content-center">
+                <div class="page-title">
+                    <div class="card bg-feature-article">
+                        <div class="card-body">
+                            <h1>
+                                The fantastic world of AO3
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- the articles -->
+        <!-- part 1 -->
+        <!-- article section block title -->
+        <div class="container text-center" style="padding-left: 0;">
+            <div class="row" >
+                <div class="title">
+                    <div class="card title-text">
+                        <div class="card-body">
+                            <h2 class="mb-0">
+                                Introduction
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- article content -->
+        <div class="container text-center article-content mb-2">
+            <div class="row justify-content-center">
+                <div class="card bg-feature-article py-2">
+                    <div class="card-body text-start fs-5">
+                        <!-- text -->
+                        <p>
+                            Archive of Our Own (AO3) is a website where people share their works with others. It is basically a repository hosting more than 7 million works that comes with a well-designed filter/search system. There are different types of work on AO3, including stories, drawings, and audiobooks.
+                        </p>
+                        
+                <!-- modal button amd body -->
+                <div class="text-center">
+                    
+                    <!-- Button to trigger ao3 modal -->
+                    <button type="button" class="btn modal-button mb-3" data-bs-toggle="modal" data-bs-target="#ao3Logo">
+                        See AO3 Logo
+                    </button>
+                    
+                    <!-- The Modal for ao3 logo-->
+                    <div class="modal" id="ao3Logo">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                        
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">AO3 Logo</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                        
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <img src="img/ao3_logo.png" alt="Archive of Our Own logo" class=" img-fluid"/>
+                            </div>
+                        
+                            <!-- Modal footer: include close button-->
+                            <div class="modal-footer">
+                                <button type="button" class="btn title-text" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of modal -->
+                                                
+                        <!-- paragraph continue -->
+                        <p>
+                            AO3 was first created to provide a place where fans could put their fanworks. People that are fans of a particular book, movie, group, or videogame form their own circle known as a fandom. The fictions and stories created by these fans are called fanfics (aka fics), the arts are fanart, and the audiobooks based on a fanfic are called podfics. Most of the works on AO3 are fanworks, but there are also original works up there.
+                        </p>
+                        <p>
+                            <h3 class="mt-4 mb-2 fs-2">What is special abut it</h3>
+                            
+                            Archive of Our Own is a non-profit website that does not have any annoying ads popping out all the time. In addition, the idea of AO3 is to share with others, therefore, almost all the works hosted on AO3 could be downloaded freely in multiple formats. Archive of Our Own does not require users to create an account to have access to most of its content and functions. Anyone could write a comment, download a fanfic, and leave a kudo.
+                
+                        </p>
+                        <p>
+                            The works on AO3 not only cover more than 40,000 fandoms, but also have characters and stories featuring all kinds of sexuality, gender identity, and relationships. In fact, among the numerous works on AO3, M/M (male/male) are the most popular type of pairing and relationship.     
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- part 2 -->
+        <!-- article section block title -->
+        <div class="container text-center" style="padding-left: 0;">
+            <div class="row" >
+                <div class="title">
+                    <div class="card title-text">
+                        <div class="card-body">
+                            <h2 class="mb-0">
+                                Where to start
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- article content -->
+        <div class="container text-center article-content mb-2">
+            <div class="row justify-content-center">
+                <div class="card bg-feature-article py-2">
+                    <div class="card-body text-start fs-5">
+                        <!-- text -->
+                        <p>
+                            If you already know the title of a work or the name of an author you are looking for, the fastest way to find it is to feed the information to google and add the keyword “ao3”. However, when searching for new works in AO3, I highly recommend using the built-in search system. AO3 has an amazing tagging system that comes with a powerful sort and filter function. There are tags for everything: name of the fandom a work belongs to, the rating of the work, warnings, characters that appear in it, the relationship of those characters, the worldview of the work, and anything the artist wants to include. 
+                        </p>
+
+                <!-- modal button amd body -->
+                <div class="text-center">
+                    
+                    <!-- Button to trigger filter column modal -->
+                    <button type="button" class="btn modal-button mb-3" data-bs-toggle="modal" data-bs-target="#filterColumn">
+                        See Filter Column
+                    </button>
+                    
+                    <!-- The Modal for ao3 logo-->
+                    <div class="modal" id="filterColumn">
+                        <div class="modal-dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                            
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Filter Column</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                            
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <img src="img/2_filter_column_en.jpg" alt="Filter Column" class=" img-fluid"/>
+                                </div>
+                            
+                                <!-- Modal footer: include close button-->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn title-text" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- end of modal -->
+
+                        <p>
+                            I recommend checking “warnings” and excluding anything you do not like, this could decrease the chance of encountering works that contain contents you wish to avoid. Altering the setting of “fandoms”, “categories”, and “additional tags” will also help narrow down your search. The “M” and “F” in “categories” represent male and female respectively. Categories let users choose what kinds of romantic and/or sexual relationships they wish to look for in a work.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- End of main content:article and other stuff -->
+        </div> <!-- End of the row that has main content -->
+
+        <!-- just to add space between bottom img and article -->
+        <div class="container" style="height: 30px;"></div>
+        <!-- background city img -->
+        <div class="row mb-0 my-0 px-0" >
+            <img src="img/red_city.png" alt="Bottom Image" class="w-100 px-0">
+        </div>
+    </div>
+
+
+
+
+    <!-- using bootstrap -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
