@@ -73,7 +73,16 @@ body {
 	font-family: TaipeiSansTCBeta, serif;
 }
 
+/* main text style */
+h1,h2,h3 {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 800;
+	margin-bottom: 0;
+}
 
+body {
+	font-family: 'Heebo', sans-serif;
+}
 
 /* only show on lg screen and larger */
 .show-on-lg {

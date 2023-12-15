@@ -3,6 +3,16 @@ body {
 }
 
 
+/* over-ride to make mobile nav match page color */
+.nav-fixed-bar-bg{
+	background-color: rgb(152, 3, 3);
+}
+.nav-fixed-bar-text{
+	font-weight: 700;
+	color: rgb(24, 0, 0);
+	background-color: rgba(251, 246, 234, 0.66);
+}
+
 /* article small block title */
 .title{
 	width: 55%;
@@ -25,13 +35,6 @@ body {
 	font-size: 1.5em;
 }
 
-h1,h2,h3 {
-	font-family:"IBM Plex Serif", serif;
-	font-family: ResourceHanRoundedTC, sans-serif; 
-	font-weight: 800;
-	margin-bottom: 0;
-} 
-
 /* modal styling */
 .modal-button{
 	color: rgb(45, 45, 42);
@@ -42,12 +45,13 @@ h1,h2,h3 {
 	border-width: 2px;
 }
 
+/* for wide long img */
 .modal-in-section{
 	max-width: 100%;
 	margin: 3% 5px;
 }
 
-/* ao3 logo on big screen */
+/* side img on big screen */
 .right-picture{
 	position: absolute;
 	background-color: #fcf8f8;
@@ -59,6 +63,7 @@ h1,h2,h3 {
 	margin-top: -20px;
 	padding: 1%;
 }
+
 
 /* for the side by side img in section 2 */
 .side-by-side{
@@ -76,29 +81,8 @@ h1,h2,h3 {
 	border-width: 1px;
 	text-align: center;
 	padding-top: 3%;
-	width: 95%;
+	width: 100%;
 	margin-bottom: 3%;
 }
-
-
-/* figure > figcaption{
-	text-align: center;
-} */
-
-/* article figure{
-	margin-top: -3%;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 5px;
-	padding: 1%;
-} */
-
-/* article>figure:last-child{
-	margin-bottom: 3%;
-} */
-
-/* article figcaption{
-	margin-bottom: 1%;
-} */
 
 

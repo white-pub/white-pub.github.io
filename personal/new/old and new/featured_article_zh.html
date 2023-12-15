@@ -1,7 +1,7 @@
 <!-- 
-    featured_article_en.html
+    featured_article_zh.html
     2023.12.4
-    English, Featured article: about ao3
+    Chinese, Featured article: about ao3
 -->
 
 <!DOCTYPE html>
@@ -9,7 +9,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>featured article - en</title>
+    <title>featured article - zh</title>
+    <!-- 中文版!!! -->
     <!-- using bootstrap -->
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
@@ -23,6 +24,20 @@
     <!-- use my own style.css -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="feature.css">
+    <style>
+        /* make sure chinese character is not too crowded */
+        .nav-fixed-bar-text{
+            font-weight: 600;
+        }
+
+        h1,h2,h3 {
+            margin-top: 3%;
+        }
+
+        .card-title{
+            font-weight: 550;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,12 +51,12 @@
                 aria-label="Toggle navigation">
                 <img src="img/fire.png" alt="Menu" 
                     width="30" height="24" class="d-inline-block align-text-top">
-                Menu
+                選單
             </button>
             <!-- offcanvas nav body -->
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header" >
-                <h5 class="offcanvas-title fs-2" id="offcanvasNavbarLabel" style="padding-left: 35px;" >Menu</h5>
+                <h5 class="offcanvas-title fs-2" id="offcanvasNavbarLabel" style="padding-left: 35px;" >選單</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body" >
@@ -50,13 +65,13 @@
                     <div class="container">
                         <!-- 1st link -->
                         <div class="row align-items-center mb-3">
-                            <a href="index.html" class="d-flex p-0" style="text-decoration: none;">
+                            <a href="index_zh.html" class="d-flex p-0" style="text-decoration: none;">
                             <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
-                                <img src="img/fire.png"  width="30" height="24"">
+                                <img src="img/fire.png"  width="30" height="24">
                             </div>
                             <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 ">
                                 <h5 class="offcanvas-text">
-                                    Home
+                                    首頁
                                 </h5>   
                             </div>
                             </a>
@@ -65,7 +80,7 @@
                         
                         <!-- 2nd link -->
                         <div class="row align-items-center mb-3">
-                            <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
+                            <a href="featured_article_zh.html" class="d-flex p-0" style="text-decoration: none;">
                             
                             <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
                                 <img src="img/fire.png"  width="30" height="24"">
@@ -81,22 +96,21 @@
 
                         <!-- 3rd link -->
                         <div class="row align-items-center ">
-                            <a href="featured_article_zh.html" class="d-flex p-0 " style="text-decoration: none;">
+                            <a href="featured_article_en.html" class="d-flex p-0 " style="text-decoration: none;">
                             <div class="col-sm-4 d-flex align-items-center justify-content-center">
                                 <img src="img/fire.png"  width="30" height="24"">
                             </div>
-                            <div class="col-sm-8  d-flex align-items-center rounded-3 ps-1 ">
+                            <div class="col-sm-8  d-flex align-items-center rounded-3 ps-2 ">
                                 <h5 class="offcanvas-text">
-                                    中文版
+                                    To EN
                                 </h5>    
-                                
                             </div>
                             </a>
 
                         </div>
                     </div>
                     <!-- end of all the offcanvas links -->
-
+                    
                 </div>
             </div>
         </div>
@@ -106,6 +120,7 @@
     <div class="container-fluid">
         <div class="row">
             
+            <!-- nav on big screen -->
             <!-- the nav back ground picture in a card -->
             <div class="col-lg-2 show-on-lg mt-4">
                 <div class="card img-fluid nav-card sticky-top" >
@@ -115,13 +130,13 @@
                         <div class="container">
                             <!-- 1st link -->
                             <div class="row align-items-center mb-2">
-                                <a href="index.html" class="d-flex p-0" style="text-decoration: none;">
+                                <a href="index_zh.html" class="d-flex p-0" style="text-decoration: none;">
                                 <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
                                     <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
                                 </div>
                                 <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 nav-text-box">
                                     <h5 class="nav-text">
-                                        Home
+                                        首頁
                                     </h5>   
                                 </div>
                                 </a>
@@ -130,7 +145,7 @@
                             
                             <!-- 2nd link -->
                             <div class="row align-items-center mb-2">
-                                <a href="featured_article_en.html" class="d-flex p-0" style="text-decoration: none;">
+                                <a href="featured_article_zh.html" class="d-flex p-0" style="text-decoration: none;">
                                 
                                 <div class="col-sm-4 d-flex align-items-center justify-content-center nav-fire-current-page">
                                     <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
@@ -146,13 +161,13 @@
 
                             <!-- 3rd link -->
                             <div class="row align-items-center ">
-                                <a href="featured_article_zh.html" class="d-flex p-0 " style="text-decoration: none;">
+                                <a href="featured_article_en.html" class="d-flex p-0 " style="text-decoration: none;">
                                 <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
                                     <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
                                 </div>
-                                <div class="col-sm-8  d-flex align-items-center rounded-3 ps-1 nav-text-box">
+                                <div class="col-sm-8  d-flex align-items-center rounded-3 ps-2 nav-text-box">
                                     <h5 class="nav-text">
-                                        中文版
+                                        To EN
                                     </h5>    
                                     
                                 </div>
@@ -175,7 +190,7 @@
                     <div class="card bg-feature-article">
                         <div class="card-body">
                             <h1>
-                                The fantastic world of AO3
+                                網路上的藏寶箱——AO3
                             </h1>
                         </div>
                     </div>
@@ -191,8 +206,8 @@
                 <div class="title">
                     <div class="card title-text">
                         <div class="card-body">
-                            <h2 class="mb-0">
-                                Introduction
+                            <h2 class="pt-1">
+                                簡介
                             </h2>
                         </div>
                     </div>
@@ -210,13 +225,14 @@
                         <div class="card right-picture pt-4 show-on-lg">
                             <img class="card-img-top" src="img/ao3_logo.png" alt="Card image" style="width:100%">
                             <div class="card-body pb-0">
-                              <h3 class="card-title">AO3 Logo</h3>
+                                <h3 class="card-title">AO3 標誌</h3>
                             </div>
                         </div>
 
                         <!-- text -->
                         <p>
-                            Archive of Our Own (AO3) is a website where people share their works with others. It is basically a repository hosting more than 7 million works that comes with a well-designed filter/search system. There are different types of work on AO3, including stories, drawings, and audiobooks.
+                            <h3 class="section-mini-title">AO3是什麼？能吃嗎？</h3>
+                            AO3全名是AO3作品庫（Archive of Our Own），是一個放有各種作品的網站。AO3有優秀的使用者介面且彙集了大量的創作，現在已經收錄超過七百萬件作品，包括文字創作、繪畫作品、影音創作。
                         </p>
                         
                 <!-- modal button amd body: ao3 logo -->
@@ -225,7 +241,7 @@
                     <!-- Button to trigger ao3 modal -->
                     <button type="button" class="btn modal-button mb-3" data-bs-toggle="modal" data-bs-target="#ao3Logo">
                         <h3>
-                            See AO3 Logo
+                            AO3 標誌
                         </h3>
                     </button>
                     
@@ -236,7 +252,7 @@
                         
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h3 class="modal-title">AO3 Logo</h3>
+                                <h3 class="modal-title">AO3 標誌</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                         
@@ -258,16 +274,14 @@
                                                 
                         <!-- paragraph continue -->
                         <p>
-                            AO3 was first created to provide a place where fans could put their fanworks. People that are fans of a particular book, movie, group, or videogame form their own circle known as a fandom. The fictions and stories created by these fans are called fanfics (aka fics), the arts are fanart, and the audiobooks based on a fanfic are called podfics. Most of the works on AO3 are fanworks, but there are also original works up there.
+                            AO3創立初衷是希望提供人們一個能夠放存放各類創作的地方。喜歡不同東西的粉絲會組成一個個同人圈，而這些粉絲為他們喜歡的角色或故事產出各種圖、文和進行其他相關創作的行為稱為二次創作，簡稱二創，這些作品統稱為「同人」，例如：同人小說（同人文）、同人圖等。AO3大部分作品都是二創同人作品，但也不乏原創作品。
                         </p>
                         <p>
-                            <h1 class="section-mini-title">What is special abut it</h1>
-                            
-                            Archive of Our Own is a non-profit website that does not have any annoying ads popping out all the time. In addition, the idea of AO3 is to share with others, therefore, almost all the works hosted on AO3 could be downloaded freely in multiple formats. Archive of Our Own does not require users to create an account to have access to most of its content and functions. Anyone could write a comment, download a fanfic, and leave a kudo.
-                
+                            <h1 class="section-mini-title">AO3有什麼特別？</h1>
+                            AO3是一個非營利網站，沒有那些煩人又礙眼的廣告。除此之外，因為創站理念是要讓作品傳播，幾乎所有站上的作品都能免費下載，還提供多種格式供選擇。AO3並沒有要求使用者一定要註冊，讀者就算沒有登入也能閱覽AO3上大部分的內容與使用它的各種功能，像是留言、下載小說、按讚（kudos）。
                         </p>
                         <p>
-                            The works on AO3 not only cover more than 40,000 fandoms, but also have characters and stories featuring all kinds of sexuality, gender identity, and relationships. In fact, among the numerous works on AO3, M/M (male/male) are the most popular type of pairing and relationship.     
+                            AAO3上的作品橫跨四萬多個同人圈，題材五花八門，多元性別、性傾向、性別認同、關係型態都有一席之地，而且其中最大宗的組合不是一男一女的異性戀關係，而是男男配對（M/M：male/male）。
                         </p>
                     </div>
                 </div>
@@ -281,8 +295,8 @@
                 <div class="title">
                     <div class="card title-text">
                         <div class="card-body">
-                            <h2 class="mb-0">
-                                Where to start
+                            <h2 class="pt-1">
+                                入門指南
                             </h2>
                         </div>
                     </div>
@@ -298,15 +312,16 @@
                         
                         <!-- side img on lg screen:filter column -->
                         <div class="card right-picture pt-4 show-on-lg">
-                            <img class="card-img-top" src="img/2_filter_column_en.jpg" alt="Card image" style="width:100%">
+                            <img class="card-img-top" src="img/2_filter_column_zh.jpg" alt="Card image" style="width:100%">
                             <div class="card-body pb-0">
-                                <h3 class="card-title">Filter Column</h3>
+                                <h3 class="card-title">標籤篩選欄</h3>
                             </div>
                         </div>
                         
                         <!-- text -->
                         <p>
-                            If you already know the title of a work or the name of an author you are looking for, the fastest way to find it is to feed the information to google and add the keyword “ao3”. However, when searching for new works in AO3, I highly recommend using the built-in search system. AO3 has an amazing tagging system that comes with a powerful sort and filter function. There are tags for everything: name of the fandom a work belongs to, the rating of the work, warnings, characters that appear in it, the relationship of those characters, the worldview of the work, and anything the artist wants to include. 
+                            <h3 class="section-mini-title">那些實用到爆的功能</h3>
+                            如果已知作品或作者名稱，建議直接在google輸入關鍵字，並加上「ao3」來進行尋找。不過如果是要找新作品，非常推薦使用AO3內建的標籤系統和其強大的搜索功能。AO3的標籤包山包海，從作品屬於哪個同人圈、潛在雷點（warnings，敏感內容預警）、作品分級、世界觀，到出場角色有哪些、角色之間的關係、以及任何創作者想添加的註解都可以是一個標籤。
                         </p>
 
                 <!-- modal button amd body: filter column -->
@@ -315,7 +330,7 @@
                     <!-- Button to trigger filter column modal -->
                     <button type="button" class="btn modal-button mb-3" data-bs-toggle="modal" data-bs-target="#filterColumn">
                         <h3>
-                            See Filter Column
+                            標籤篩選欄
                         </h3>
                     </button>
                     
@@ -327,13 +342,13 @@
                             
                                 <!-- Modal Header -->
                                 <div class="modal-header">
-                                    <h3 class="modal-title">Filter Column</h3>
+                                    <h3 class="modal-title">標籤篩選欄</h3>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                 </div>
                             
                                 <!-- Modal body -->
                                 <div class="modal-body">
-                                    <img src="img/2_filter_column_en.jpg" alt="Filter Column" class=" img-fluid"/>
+                                    <img src="img/2_filter_column_zh.jpg" alt="Filter Column" class=" img-fluid"/>
                                 </div>
                             
                                 <!-- Modal footer: include close button-->
@@ -350,24 +365,24 @@
                 <!-- end of modal -->
 
                         <p>
-                            I recommend checking “warnings” and excluding anything you do not like, this could decrease the chance of encountering works that contain contents you wish to avoid. Altering the setting of “fandoms”, “categories”, and “additional tags” will also help narrow down your search. The “M” and “F” in “categories” represent male and female respectively. Categories let users choose what kinds of romantic and/or sexual relationships they wish to look for in a work.
+                            找新作品時建議檢查一下雷點（warnings）：在「Exclude（排除）」底下的「warnings（雷點）」選擇不想看到的內容並按╳，這樣可以降低之後被作品內容雷到的機率。接著選填「fandoms（同人圈）」、「categories（分類）」和「additional tags（其他標籤）」這幾欄，有助於找到合心意的作品。其中「categories（分類）」裡面的M跟F分別代表男性（male）與女性（female），這一欄能幫你找到鍾意的主要愛情線或性關係類型。
                         </p>
                         
                         <!-- side by side img: archive warnings and category tags-->
                         <div class="card-group">
                             <div class="card">
                                 <div class="card side-by-side">
-                                    <img src="img/2_warning_en.jpg" class="card-img-top" alt="...">
+                                    <img src="img/2_warning_zh.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                      <h3 class="card-title">Archive Warnings</h3>
+                                      <h3 class="card-title">各式雷點/警告篩選欄</h3>
                                     </div>
                                   </div>
                             </div>
                             <div class="card">
                                 <div class="card side-by-side">
-                                    <img src="img/2_categories_en.jpg" class="card-img-top" alt="...">
+                                    <img src="img/2_categories_zh.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                      <h3 class="card-title">Category tags</h3>
+                                      <h3 class="card-title">(感情線/性關係)分類篩選欄</h3>
                                     </div>
                                   </div>
                             </div>
@@ -375,15 +390,15 @@
                         <!-- end of side by side img -->
 
                         <p>
-                            <h1 class="section-mini-title">Other tips</h1>
-                            Another useful function in AO3 is the two modes of displaying a work. The default mode is to show a work chapter by chapter, but the “Entire work” mode is more convenient when users wish to search through the whole text for a keyword or quickly skim through the content.
+                            <h1 class="section-mini-title">其他好用小技巧</h1>
+                            多章節的作品預設呈現模式是一次一章節（Chapter by Chapter），不過如果想要搜索全文或是快速瀏覽作品內容，可以選擇「全文（Entire Work）」模式。
                         </p>
 
                         <!-- in section card: button for "entire work" -->
                         <div class="card card-in-section show-on-lg">
-                            <img src="img/2_entire_en.jpg" class="card-img-top" alt="...">
+                            <img src="img/2_entire_zh.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h3 class="card-title">Button for Entire work</h3>
+                              <h3 class="card-title">全文顯示鍵</h3>
                             </div>
                         </div>
 
@@ -393,7 +408,7 @@
                     <!-- Button to trigger "button for entire work" modal -->
                     <button type="button" class="btn modal-button mb-3" data-bs-toggle="modal" data-bs-target="#buttonForEntireWork">
                         <h3>
-                            See "Entire Work" Button
+                            全文顯示鍵
                         </h3>
                     </button>
                     
@@ -404,13 +419,13 @@
                         
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h3 class="modal-title">Button for Entire Work</h3>
+                                <h3 class="modal-title">全文顯示鍵</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                         
                             <!-- Modal body -->
                             <div class="modal-body px-0">
-                                <img src="img/2_entire_en.jpg" alt="button for entire work" class=" img-fluid" style="max-width: 100%; height: auto;"/>
+                                <img src="img/2_entire_zh.jpg" alt="button for entire work" class=" img-fluid" style="max-width: 100%; height: auto;"/>
                             </div>
                         
                             <!-- Modal footer: include close button-->
@@ -425,14 +440,14 @@
                 <!-- end of modal -->
 
                         <p>
-                            AO3 supports text-based content the best, you could download any fanfic just by clicking. The work could be downloaded in many formats. For example: PDF, EPUB, AZW3, and HTML.  
+                            AO3 對文字內容支援度最高，任何小說都可以一鍵下載，可以選擇的格式有五六種，包含：PDF、 EPUB、AZW3,和HTML等。 
                         </p>
 
                         <!-- in section card: button for "download" -->
                         <div class="card card-in-section show-on-lg">
-                            <img src="img/2_download_en.jpg" class="card-img-top" alt="...">
+                            <img src="img/2_download_zh.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h3 class="card-title">Button for Download</h3>
+                              <h3 class="card-title">下載鍵</h3>
                             </div>
                         </div>
 
@@ -442,24 +457,24 @@
                     <!-- Button to trigger "button for download" modal -->
                     <button type="button" class="btn modal-button mb-3" data-bs-toggle="modal" data-bs-target="#buttonForDownload">
                         <h3>
-                            See "Download" Button
+                            下載鍵
                         </h3>
                     </button>
                     
-                    <!-- The Modal for: button for entire work-->
+                    <!-- The Modal for: button for download-->
                     <div class="modal" id="buttonForDownload">
                         <div class="modal-dialog modal-dialog-centered modal-in-section">
                             <div class="modal-content  modal-in-section">
                         
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h3 class="modal-title">Button for Download</h3>
+                                <h3 class="modal-title">下載鍵</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                         
                             <!-- Modal body -->
                             <div class="modal-body px-0">
-                                <img src="img/2_download_en.jpg" alt="button for entire work" class=" img-fluid" style="max-width: 100%; height: auto;"/>
+                                <img src="img/2_download_zh.jpg" alt="button for download" class=" img-fluid" style="max-width: 100%; height: auto;"/>
                             </div>
                         
                             <!-- Modal footer: include close button-->
@@ -485,8 +500,9 @@
                 <div class="title">
                     <div class="card title-text">
                         <div class="card-body">
-                            <h2 class="mb-0">
-                                Sharpen your English skill
+                            <h2 class="pt-1">
+                                <p>看／聽小說，</p>
+                                <p>學英文 XD</p>
                             </h2>
                         </div>
                     </div>
@@ -502,14 +518,14 @@
                                              
                         <!-- text -->
                         <p>
-                            If you are looking for a way to sharpen your English skills, AO3 also has many resources. Reading the fanfics posted there, you could pick up all kinds of slangs on your way and learn new words. Although there are many brilliant works on AO3, there are also works that contain a lot of typos and grammar errors. Since there is no editor to edit the text before a work gets published, most authors have to do the editing by themselves. Betas are like editors, they help the author revise his or her work. A fic that has a beta or is beta-ed normally has much less spelling and grammar errors.
+                            AO3上的資源也可以用於增進英文能力。與學校課本相比，AO3的英文二創小說有較多俚語跟非正式語法，同時也有許多新單字可以學。雖然AO3有許多優良作品，但整體而言就其創作成品水準參差不齊，畢竟沒有編輯把關，作者常常要自己身兼編輯與校對，所以不少小說內含滿滿的拼字和文法錯誤。Beta有點類似校對或編輯，會協助作者修訂作品，所以一篇有Beta的小說通常拼字與文法錯誤會少很多。Beta也可以做為動詞，意思近似於「校對」，一篇beta過的小說同樣平均而言錯字少很多，讀起來比較舒服。
                         </p>
                         
-                        <!-- in section card: works with beta -->
+                        <!-- in section card: work's with beta -->
                         <div class="card card-in-section show-on-lg">
                             <img src="img/3_beta.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h3 class="card-title">Works with a beta</h3>
+                              <h3 class="card-title">有Beta的作品</h3>
                             </div>
                         </div>
 
@@ -519,7 +535,7 @@
                     <!-- Button to trigger "works with beta" modal -->
                     <button type="button" class="btn modal-button mb-3" data-bs-toggle="modal" data-bs-target="#worksWithBeta">
                         <h3>
-                            See Works with a Beta
+                            有Beta的作品
                         </h3>
                     </button>
                     
@@ -530,7 +546,7 @@
                         
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h3 class="modal-title">Works with a Beta</h3>
+                                <h3 class="modal-title">有Beta的作品</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                         
@@ -550,14 +566,14 @@
                 </div>
                 <!-- end of modal -->                        
                         <p>
-                            Aside from fictions, there are also numerous podfics (the audiobook version of a fanfic) that are suitable for practicing English listening on AO3. The advantage of podfics is that they are based on fanfics, which means you could find the full text version of the work. This makes it easy to look up and check words you did not understand when listening to the podfic. Also, the podfics and their text versions are all free to download/stream. In addition, listening to a podfic provides you the chance to get used to different speeds of speech and accents. Because popular works have a higher chance of getting a podfic version, if a fanfic got a podfic, it mostly indicates higher quality with less misspelling and sloppy grammar.
+                            除了小說之外，AO3上也有不少英文有聲書，使用的標籤通常是「Podfic」，代表是以同人文為創作基底的有聲書。因為這些有聲書都有逐字稿（原本的純文字小說）所以很適合拿來練英文聽力。遇到聽不懂的內容時，有逐字稿就方便查單字。另外，這些有聲書和同人文都可以免費下載／線上串流收聽，對荷包很友善。又因為世界各地的人都可能在AO3分享自己錄製的有聲書，所以用有聲書練英聽可以讓你習慣不同的語速跟口音。能被製成有聲書的二創小說通常人氣都不錯，平均而言，他們寫作水平也比較高，作品讀起來較流暢，不會時不時出現奇怪的單字或拗口詭異的文法。
                         </p>
                         
                         <!-- in section card: find original of podfic -->
                         <div class="card card-in-section show-on-lg">
-                            <img src="img/3_find_original_en.jpg" class="card-img-top" alt="...">
+                            <img src="img/3_find_original_zh.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h3 class="card-title">How to Find the Work that Inspired the Podfic</h3>
+                              <h3 class="card-title">如何找到有聲書的原文</h3>
                             </div>
                         </div>
 
@@ -567,24 +583,24 @@
                     <!-- Button to trigger "find original of podfic" modal -->
                     <button type="button" class="btn modal-button mb-3" data-bs-toggle="modal" data-bs-target="#findOriginal">
                         <h3>
-                            See How to Find the Work that Inspired the Podfic
+                            如何找到有聲書的原文
                         </h3>
                     </button>
                     
-                    <!-- The Modal for: button for entire work-->
+                    <!-- The Modal for: find original-->
                     <div class="modal" id="findOriginal">
                         <div class="modal-dialog modal-dialog-centered modal-in-section">
                             <div class="modal-content  modal-in-section">
                         
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h3 class="modal-title">How to Find the Work that Inspired the Podfic</h3>
+                                <h3 class="modal-title">如何找到有聲書的原文</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                         
                             <!-- Modal body -->
                             <div class="modal-body px-0">
-                                <img src="img/3_find_original_en.jpg" alt="button for entire work" class=" img-fluid" style="max-width: 100%; height: auto;"/>
+                                <img src="img/3_find_original_zh.jpg" alt="find original" class=" img-fluid" style="max-width: 100%; height: auto;"/>
                             </div>
                         
                             <!-- Modal footer: include close button-->
@@ -610,8 +626,9 @@
                 <div class="title">
                     <div class="card title-text">
                         <div class="card-body">
-                            <h2 class="mb-0">
-                                Recommendation
+                            <h2 class="pt-1">
+                                <p>推坑時間！</p>
+                                <p>優質作品、作者推薦</p>
                             </h2>
                         </div>
                     </div>
@@ -628,15 +645,18 @@
                         <!-- text -->
                         <p>
                             <h3>[Podfic] ain't really quaint</h3>
-                            This is a light and humorous story from the Captain America fandom, featuring Steve Rogers (Captain America) and James “Bucky” Barnes (the winter soldier). The podficer Quietnight not only has excellent taste when choosing stories to podfic, they also make the voice of each character distinct, which makes it easy to understand dialogs. Quietnight is a talented artist who produces fantastic artworks as well as podfics.
+                            這是一個輕鬆爆笑的故事，屬於漫威《美國隊長》的同人創作，主角是美國隊長史蒂芬·羅傑斯（Steve Rogers）和酷寒戰士巴奇·巴恩斯（the winter soldier James “Bucky” Barnes）。說書人Quietnight眼光很好，被他挑中錄製成有聲書的故事都是優質作品，而且Quietnight在錄有聲書時會讓不同角色有不同聲線，當故事中角色互相對話時，聽眾可以輕鬆分辨誰是誰。　
                         </p>
                         <p>
+                            Quietnight除了很會講故事外，還是位優秀的畫家，《ain't really quaint》的有聲書版本就有好幾張超爆笑的出色插圖，很值得一看。
+                        </p>                        
+                        <p>
                             <h3>Opalsong</h3>
-                            Opalsong is a very productive podficer that has more than 1,000 podfics scattered across more than 200 fandoms under their belt. They give different characters different voices, too. Apart from speaking clearly, the recording and editing are both neat and clean. Listening to their work is a great experience.
+                            Opalsong 是位高產的說書人，目前累計有超過一千本有聲書，橫跨兩百多個同人圈。他同樣會給不同角色不同聲音，而且咬字清晰，又有優質的錄音與後製，每次聽他作品都很愉快。
                         </p>
                         <p>
                             <h3>Lockedinjohnlock (Podfixx)</h3>
-                            Lockedinjohnlock (Podfixx) has two pseuds on AO3, Lockedinjohnlock and Podfixx, both with more than one hundred podfic works. Their podfics are also well-made. In addition, Lockedinjohnlock has an English accent. (Many of their works have the tag “English accent”, too!) Their accent is distinct from the American accent many Taiwan students are used to. But it is not so different from an American English accent that it is hard to understand. To me, it is interesting to experience the different tone and pronunciation when listening to one of Lockedinjohnlock’s podfics.
+                            Lockedinjohnlock (Podfixx) 在AO3有兩個化名，分別為Lockedinjohnlock和Podfixx，名下各有超過一百本有聲書。他的有聲書品質也很好，而且他口音是台灣學生較少接觸的英國腔（他很多作品的標籤區都直接寫「English accent」XD）。雖然生活中較少接觸英國口音，不過Lockedinjohnlock 的口音不會太難聽懂，能體驗不同的聲調跟發音其實挺有趣的。
                         </p>
 
                     </div>
