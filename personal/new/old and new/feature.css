@@ -29,6 +29,7 @@ h1,h2,h3 {
 	font-family:"IBM Plex Serif", serif;
 	font-family: ResourceHanRoundedTC, sans-serif; 
 	font-weight: 800;
+	margin-bottom: 0;
 } 
 
 /* modal styling */
@@ -39,6 +40,11 @@ h1,h2,h3 {
 	font-weight: 900;
 	border-style: solid;
 	border-width: 2px;
+}
+
+.modal-in-section{
+	max-width: 100%;
+	margin: 3% 5px;
 }
 
 /* ao3 logo on big screen */

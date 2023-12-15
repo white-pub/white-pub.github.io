@@ -68,7 +68,7 @@
                 Menu
             </button>
             <!-- offcanvas nav body -->
-            <div class="offcanvas offcanvas-start  h4" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header" >
                 <h5 class="offcanvas-title fs-2" id="offcanvasNavbarLabel" style="padding-left: 35px;" >Menu</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -270,7 +270,9 @@
                     
                     <!-- Button to trigger ao3 modal -->
                     <button type="button" class="btn modal-button mb-3" data-bs-toggle="modal" data-bs-target="#ao3Logo">
-                        See AO3 Logo
+                        <h3>
+                            See AO3 Logo
+                        </h3>
                     </button>
                     
                     <!-- The Modal for ao3 logo-->
@@ -280,7 +282,7 @@
                         
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h4 class="modal-title">AO3 Logo</h4>
+                                <h3 class="modal-title">AO3 Logo</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                         
@@ -358,7 +360,9 @@
                     
                     <!-- Button to trigger filter column modal -->
                     <button type="button" class="btn modal-button mb-3" data-bs-toggle="modal" data-bs-target="#filterColumn">
-                        See Filter Column
+                        <h3>
+                            See Filter Column
+                        </h3>
                     </button>
                     
                     <!-- The Modal for ao3 logo-->
@@ -369,7 +373,7 @@
                             
                                 <!-- Modal Header -->
                                 <div class="modal-header">
-                                    <h4 class="modal-title">Filter Column</h4>
+                                    <h3 class="modal-title">Filter Column</h3>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                 </div>
                             
@@ -421,7 +425,7 @@
                             Another useful function in AO3 is the two modes of displaying a work. The default mode is to show a work chapter by chapter, but the “Entire work” mode is more convenient when users wish to search through the whole text for a keyword or quickly skim through the content.
                         </p>
 
-                        <div class="card card-in-section">
+                        <div class="card card-in-section show-on-lg">
                             <img src="img/2_entire_en.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3 class="card-title">Button for Entire work</h3>
@@ -433,23 +437,25 @@
                     
                     <!-- Button to trigger ao3 modal -->
                     <button type="button" class="btn modal-button mb-3" data-bs-toggle="modal" data-bs-target="#buttonForEntireWork">
-                        See Button for Entire Work
+                        <h3>
+                            See Button for Entire Work
+                        </h3>
                     </button>
                     
-                    <!-- The Modal for ao3 logo-->
+                    <!-- The Modal for button for entire work-->
                     <div class="modal" id="buttonForEntireWork">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
+                        <div class="modal-dialog modal-dialog-centered modal-in-section">
+                            <div class="modal-content  modal-in-section">
                         
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h4 class="modal-title">Button for Entire Work</h4>
+                                <h3 class="modal-title">Button for Entire Work</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                         
                             <!-- Modal body -->
-                            <div class="modal-body">
-                                <img src="img/2_entire_en.jpg" alt="button for entire work" class=" img-fluid"/>
+                            <div class="modal-body px-0">
+                                <img src="img/2_entire_en.jpg" alt="button for entire work" class=" img-fluid" style="max-width: 100%; height: auto;"/>
                             </div>
                         
                             <!-- Modal footer: include close button-->
