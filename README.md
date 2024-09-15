@@ -10,15 +10,21 @@ Overview
 
 Projects
 
-  analysis: Expository Essay Analysis Website
+  Expository Essay Analysis Website
+  - folder: analysis
+  - weblink: https://white-pub.github.io/analysis/index.html
   - Features an expository essay and my structural analysis.
   - Programming language: HTML, CSS, JavaScript.
 
-  personal: Personal Bilingual Website
+  Personal Bilingual Website
+  - folder: personal
+  - weblink: https://white-pub.github.io/personal/index.html
   - Includes a featured article and an autobiography I wrote in English and Chinese.
   - Programming language: HTML, CSS.
 
   Personal Bilingual Website: Rewrite
+  - folder:
+  - weblink:
   - An updated version of the previous project with significant improvements.
   - Enhanced responsiveness using Bootstrap.
   - Improved layout for mobile devices.
