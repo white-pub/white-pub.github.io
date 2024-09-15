@@ -1,17 +1,26 @@
-Website projects.
-  
-  -- Practice files for html, css, and Javascript
+Website Projects
 
-- Expository Essay Analysis website
-    Includes a expository essay and my structual analysis.
+Overview
+  This repository showcases my skills in:
+  - Website development and responsive design.
+  - Programming languages like HTML, CSS, JavaScript
+  - Front-end design tools such as Bootstrap.
+  - My bilingual writing skills (English and Chinese), with content I wrote and translated myself.
 
-- Personal bilingual website
-    Include a feteaure article and an autobiography that I written
-    Porrgramming language: CSS and HTML
 
-- Personal bilingual website: Rewrite
-    Similar content and layout as the old version
-    Greatly improved responsiveness utilizing Bootstrap
-    Imporved layout on mobile devices
-    Porrgramming language: CSS and HTML
-    Other tools: Bootstrap
+Projects
+
+  [analysis]Expository Essay Analysis Website
+    Features an expository essay and my structural analysis.
+    Programming language: HTML, CSS, JavaScript.
+
+  Personal Bilingual Website
+    Includes a featured article and an autobiography I wrote in English and Chinese.
+    Programming language: HTML, CSS.
+
+  Personal Bilingual Website: Rewrite
+    An updated version of the previous project with significant improvements.
+    Enhanced responsiveness using Bootstrap.
+    Improved layout for mobile devices.
+    Programming language: HTML, CSS.
+    Tools: Bootstrap.
