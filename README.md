@@ -10,17 +10,17 @@ Overview
 
 Projects
 
-  [analysis]Expository Essay Analysis Website
-    Features an expository essay and my structural analysis.
-    Programming language: HTML, CSS, JavaScript.
+  [analysis] Expository Essay Analysis Website
+    - Features an expository essay and my structural analysis.
+    - Programming language: HTML, CSS, JavaScript.
 
-  Personal Bilingual Website
-    Includes a featured article and an autobiography I wrote in English and Chinese.
-    Programming language: HTML, CSS.
+  [personal] Personal Bilingual Website
+    - Includes a featured article and an autobiography I wrote in English and Chinese.
+    - Programming language: HTML, CSS.
 
   Personal Bilingual Website: Rewrite
-    An updated version of the previous project with significant improvements.
-    Enhanced responsiveness using Bootstrap.
-    Improved layout for mobile devices.
-    Programming language: HTML, CSS.
-    Tools: Bootstrap.
+    - An updated version of the previous project with significant improvements.
+    - Enhanced responsiveness using Bootstrap.
+    - Improved layout for mobile devices.
+    - Programming language: HTML, CSS.
+    - Tools: Bootstrap.
