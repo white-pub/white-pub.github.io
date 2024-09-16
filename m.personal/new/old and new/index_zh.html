@@ -1,0 +1,229 @@
+<!-- 
+    index_zh.html
+    2023.12.4
+    Chinese, Home page: autobiography/about me 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autobiography</title>
+    <!-- 中文版 -->
+    <!-- using bootstrap -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+    <!-- Other style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;600;700&family=Josefin+Slab:ital,wght@0,600;0,700;1,400&family=Noticia+Text:wght@400;700&display=swap" 
+        rel="stylesheet"> 	
+    <!-- use my own style.css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+    <!-- fixed nav bar on page top-->
+    <nav class="navbar fixed-top nav-fixed-bar-bg hide-on-lg">
+        <div class="container-fluid">
+            <!-- Button to call out the off canvas navbar -->
+            <button class="navbar-toggler h5 my-0 nav-fixed-bar-text " type="button" data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" 
+                aria-label="Toggle navigation">
+                <img src="img/fire.png" alt="Menu" 
+                    width="30" height="24" class="d-inline-block align-text-top">
+                選單
+            </button>
+            <!-- offcanvas nav body -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header" >
+                <h5 class="offcanvas-title fs-2" id="offcanvasNavbarLabel" style="padding-left: 35px;" >選單</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" >
+                    
+                    <!-- all the offcanvas links -->
+                    <div class="container">
+                        <!-- 1st link -->
+                        <div class="row align-items-center mb-3">
+                            <a href="index_zh.html" class="d-flex p-0" style="text-decoration: none;">
+                            <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                <img src="img/fire.png"  width="30" height="24">
+                            </div>
+                            <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 ">
+                                <h5 class="offcanvas-text">
+                                    首頁
+                                </h5>   
+                            </div>
+                            </a>
+
+                        </div>
+                        
+                        <!-- 2nd link -->
+                        <div class="row align-items-center mb-3">
+                            <a href="featured_article_zh.html" class="d-flex p-0" style="text-decoration: none;">
+                            
+                            <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                <img src="img/fire.png"  width="30" height="24"">
+                            </div>
+                            <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 ">
+                                <h5 class="offcanvas-text">
+                                    AO3!!
+                                </h5>   
+                            </div>
+                            </a>
+
+                        </div>
+
+                        <!-- 3rd link -->
+                        <div class="row align-items-center ">
+                            <a href="index.html" class="d-flex p-0 " style="text-decoration: none;">
+                            <div class="col-sm-4 d-flex align-items-center justify-content-center">
+                                <img src="img/fire.png"  width="30" height="24"">
+                            </div>
+                            <div class="col-sm-8  d-flex align-items-center rounded-3 ps-2 ">
+                                <h5 class="offcanvas-text">
+                                    To EN
+                                </h5>    
+                            </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- end of all the offcanvas links -->
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- all the content including nav on lg screen -->
+    <div class="container-fluid">
+        <div class="row">
+            
+            <!-- nav on big screen -->
+            <!-- the nav back ground picture in a card -->
+            <div class="col-lg-2 show-on-lg mt-4">
+                <div class="card img-fluid nav-card sticky-top" >
+                    <img class="card-img-top px-0 " src="img/menu.png" alt="Card image" style="width:90%">
+                    <!-- where all the links are -->
+                    <div class="card-img-overlay px-0 py-0" style="left: 25%; top:15%; bottom: 20%;">
+                        <div class="container">
+                            <!-- 1st link -->
+                            <div class="row align-items-center mb-2">
+                                <a href="index_zh.html" class="d-flex p-0" style="text-decoration: none;">
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center nav-fire-current-page">
+                                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
+                                </div>
+                                <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 nav-current-page">
+                                    <h5 class="nav-text">
+                                        首頁
+                                    </h5>   
+                                </div>
+                                </a>
+
+                            </div>
+                            
+                            <!-- 2nd link -->
+                            <div class="row align-items-center mb-2">
+                                <a href="featured_article_zh.html" class="d-flex p-0" style="text-decoration: none;">
+                                
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
+                                </div>
+                                <div class="col-sm-8 d-flex align-items-center rounded-3 ps-2 nav-text-box">
+                                    <h5 class="nav-text">
+                                        AO3!!
+                                    </h5>   
+                                </div>
+                                </a>
+
+                            </div>
+
+                            <!-- 3rd link -->
+                            <div class="row align-items-center ">
+                                <a href="index.html" class="d-flex p-0 " style="text-decoration: none;">
+                                <div class="col-sm-4 d-flex align-items-center justify-content-center bg-nav-fire">
+                                    <img src="img/fire.png" style="width: 2.5vw;margin-top: 5px;margin-bottom: 5px;">
+                                </div>
+                                <div class="col-sm-8  d-flex align-items-center rounded-3 ps-2 nav-text-box">
+                                    <h5 class="nav-text">
+                                        To EN
+                                    </h5>    
+                                    
+                                </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main content: articles and other stuff-->
+            <div class="col-lg-8 col-md-9 col-sm-11 mx-auto mx-lg-0 ">
+                <!-- page title -->
+                <div class="container text-center mt-4">
+                    <div class="row justify-content-center">
+                        <div class="page-title">
+                            <div class="card bg-home-article">
+                                <div class="card-body">
+                                    <h1>
+                                        自我介紹
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- the articles -->
+                <!-- article content -->
+                <div class="container text-center article-content my-3">
+                    <div class="row justify-content-center">
+                        <div class="card bg-home-article py-2">
+                            <div class="card-body text-start fs-5">
+                                <!-- text -->
+                                <p>
+                                    大家好，我是Anna，目前大三，就讀國立清華大學外國語文學系。我喜歡閱讀，涉獵的領域五花八門，書單上什麼都有：奇幻、武俠、經濟、心理等都曾名列其中。閒暇時，我也喜歡做手工藝、縫紉和畫畫。
+                                </p>
+                                <p>
+                                    清大外文以數量眾多且內容豐富的語言學課程著名，我每學期都修好幾堂語言學領域的課，目標是畢業後至google之類的科技公司工作，善用語言學讓人類跟電腦能更順暢的溝通。
+                                </p>
+                                <p>
+                                    除了人類語言之外，我也需要熟悉程式語言，所以我這學期去選修資工系開設的python程式語言入門。幸好清大選課自由，要修其他系所的課程門檻也很低，我才能修到這堂程式語言入門。 
+                                </p>
+                                <p>
+                                    之後，我想在科技業工作，並專攻人類語言跟人工智慧，所以熟悉python後，我會開始試著學習如何把程式語言跟人類語言相結合。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div> <!-- End of the row that has main content -->
+        
+        <!-- just to add space between bottom img and article -->
+        <div class="container" style="height: 30px;"></div>
+        <!-- background city img -->
+        <div class="row mb-0 my-0 px-0" >
+            <img src="img/city.png" alt="Bottom Image" class="w-100 px-0">
+        </div>
+
+    </div>
+
+
+
+
+    <!-- using bootstrap -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
