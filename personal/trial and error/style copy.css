@@ -1,0 +1,181 @@
+/*
+中文:
+導覽列-台北黑體
+	font-family: "TaipeiSansTCBeta", sans-serif;
+內文-台北黑體
+	font-family: "TaipeiSansTCBeta", serif;
+標題-圓體
+	font-family: "ResourceHanRoundedTC", sans-serif; 
+
+font-family: 'Heebo', sans-serif;
+font-family: 'Inter', sans-serif;
+
+font-family: 'Josefin Slab', serif;
+
+font-family: 'IBM Plex Serif', serif;
+
+不喜歡font-family: 'Noticia Text', serif;
+
+英文:
+導覽列
+
+進度條
+		.scrollbar > a{
+			font-family: 'Josefin Slab', serif;
+		}
+內文
+		font-family: 'Heebo', sans-serif;
+標題
+		font-family: 'Josefin Slab', serif;
+
+*/
+
+@font-face {
+  font-family: TaipeiSansTCBeta;
+  src: url(TaipeiSansTCBeta/TaipeiSansTCBeta-Regular.ttf);
+}
+
+@font-face {
+  font-family: TaipeiSansTCBeta;
+  src: url(TaipeiSansTCBeta/TaipeiSansTCBeta-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: ResourceHanRoundedTC;
+  src: url(RHR-TTF-0.990/ResourceHanRoundedTC-Regular.ttf);
+}
+
+
+body {
+	font-family: "Inter", sans-serif;
+	font-family: TaipeiSansTCBeta, serif;
+}
+/* 
+nav{
+	position: fixed;
+	top: 1%;
+	left: 0.5%;
+	width: 11%;
+}
+
+nav>img{
+	position: relative;height: 35vh; z-index: 0;
+}
+
+nav a{
+	text-decoration: none;
+}
+
+nav>a{
+	position: absolute;
+	display:block;
+	left: 30%;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	width: 90%;
+	height: 7vh;
+	font-weight: bold;
+	font-size: 1.7vw;
+	text-align: left;
+	padding: 1vh 0 1vh 9%;
+	z-index: 2;
+	font-family: "Inter", sans-serif;
+	font-family: TaipeiSansTCBeta, sans-serif;
+}
+
+nav a:nth-child(2){
+	top: 9%;
+}
+
+nav a:nth-child(3){
+	top: 34%;
+}
+
+nav a:nth-child(4){
+	top: 59%;
+}
+
+a>img{
+	width: 2vw;
+	vertical-align: middle;
+	padding: 0 4% 1% 0;
+}
+
+.current-page{
+	font-size: 2vw;
+}
+
+.current-page img{
+	width: 30%;
+	padding-left: 0;
+	margin-left: -2%;
+	margin-right: 1%;
+} */
+
+/* img{
+	width: 100%;
+	height: auto;	
+	position: relative;
+}
+
+body > figure:last-child{
+
+	position: relative;
+	margin-top: 3%;
+	line-height: 0;
+	z-index: -1;
+} */
+
+h1,h2,h3 {
+	font-family:"IBM Plex Serif", serif;
+	font-family: ResourceHanRoundedTC, sans-serif; 
+	font-weight: 800;
+}
+
+/* h1{
+	font-size: 8vh;
+	line-height: 10vh;
+	margin: 1vh 0;
+}
+
+h3{
+	font-size: 5vh;
+	line-height: 7.5vh;
+	margin: 2vh 0 1.5vh 0;
+	font-weight: bold;
+} */
+/* 	
+.article{
+	width: 60%;
+	margin-left: 20%;
+}
+
+article{
+	border-radius: 5px;
+	padding: 2% 4%;
+	position: relative;
+	left: 50%;
+	text-align: left;
+	transform: translateX(-50%);
+}
+
+article > p{
+	margin: 4% 0;
+}
+
+section {
+	margin: 1.2vh 0;
+}
+
+section > p {
+	text-indent: 5%;
+}
+
+p {
+	margin: 0.2vh 0;
+} */
+
+
+
