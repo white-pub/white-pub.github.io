@@ -17,14 +17,14 @@ Projects
   - Programming language: HTML, CSS, JavaScript.
 
   Personal Bilingual Website
-  - folder: personal
+  - folder: personal(main branch)
   - weblink: https://white-pub.github.io/personal/index.html
   - Includes a featured article and an autobiography I wrote in English and Chinese.
   - Programming language: HTML, CSS.
 
   Personal Bilingual Website: Rewrite
-  - folder:
-  - weblink:
+  - folder: m.personal(mobile-friendly branch) 
+  - weblink: https://white-pub.github.io/m.personal/index.html
   - An updated version of the previous project with significant improvements.
   - Enhanced responsiveness using Bootstrap.
   - Improved layout for mobile devices.
